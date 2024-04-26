@@ -1,0 +1,145 @@
+/* FONTES */
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.5rem 0 1.5rem 0;
+    padding: 0 0.5rem 0 0.5rem;
+
+    /* font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0; */
+}
+
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0 1rem 0;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+p, a{
+    font-size: 1.2rem;
+    padding: 0 0.5rem 0 0.5rem;
+
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.enfase{
+    font-weight: bold;
+}
+
+/* DISPLAY */
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.center{
+    justify-content: center;
+    align-self: center;
+}
+
+/* HEADER */
+
+header{
+    background-color: #B9D2BC;
+    height: 4.5rem;
+    padding: 0.5rem;
+    border-bottom: solid 0.01rem black;
+}
+
+header img{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 0.6rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+/* BODY */
+
+main{
+    margin: 0 7rem 0 7rem;
+}
+
+/* BOTÃO */
+.botao{
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+
+    background-color: #B9D2BC;
+    color: black;
+
+    padding: 0.5rem;
+}
+
+.botao:hover{
+    background-color: #ACCB96;
+    color: black;
+    font-weight: bold;
+}
+
+/* IMAGENS */
+
+.logo{
+    width: 15rem;
+    height: 15rem;
+}
+
+.full_screen{
+    width: 100%;
+    height: auto;
+}
+
+.tania{
+    width: 20rem;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+/* SOBRE NÓS */
+.box{
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 0 1em 0;
+}
+
+.icones{
+    width: 6rem;
+    height: auto;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonte corpo principal - NUNITO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap" rel="stylesheet">
+
+    <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Incluir o header -->
+    <div class="header-wrapper" id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+    <img class="full_screen" src="img/clinica_sobre_nos.jpg" alt="" srcset="">
+
+    <main class="column">
+
+        <!-- SOBRE NÓS -->
+        <h1 class="center">Sobre nós</h1>
+
+        <section class="row">
+            <img class="tania" src="img/foto_tania_quadrada.jpg" alt="" srcset="">
+            <div class="column">
+                <h2>História da Clínica</h2>
+                <p>Na Clínica Dermatológica da Doutora Tânia, a história se entrelaça com a paixão e expertise da Dra. Tânia,
+                    uma dermatologista experiente e dedicada.</p>
+                <br>
+                <p>Desde a inauguração, tornamo-nos um ponto de referência para quem busca tratamentos dermatológicos de qualidade,
+                     oferecendo serviços que vão desde cuidados médicos especializados até procedimentos estéticos avançados.</p>
+                <br>
+                <p>Sob a liderança da Dra. Tânia, comprometemo-nos em proporcionar uma experiência única e acolhedora, onde cada
+                     paciente é tratado com respeito, compreensão e dedicação.</p>
+
+                <br><br>
+
+                <p>Descubra nossa história e compromisso com sua beleza.</p>
+                <br>
+                <a href="#" class="botao">Saiba mais sobre a Dra. Tania</a>
+            </div>
+        </section>
+
+        <!-- MISSÃO, VISÃO, VALORES  -->
+        <section class="row between">
+            <div class="column center">
+                <ul class="box">
+                    <li><h2>Visão</h2></li>
+                    <li><img class="icones" src="img/visao.png" alt="" srcset=""></li>
+                    <li><p>Ser reconhecida pela excelência no atendimento humanizado, pela expertise profissional e pela vanguarda
+                        tecnológica, promovendo o bem-estar e a autoestima dos nossos clientes.</p></li>
+                </ul>
+            </div>
+
+            <div class="column center">
+                <ul class="box">
+                    <li><h2>Missão</h2></li>
+                    <li><img class="icones" src="img/missao.png" alt="" srcset=""></li>
+                    <li><p>Proporcionar aos nossos clientes uma experiência dermatológica excepcional, com foco no cuidado personalizado,
+                         na qualidade dos serviços e na criação de um ambiente acolhedor e seguro.</p></li>
+                </ul>
+            </div>
+
+            <div class="column center">
+                <ul class="box">
+                    <li><h2>Valores</h2></li>
+                    <li><img class="icones" src="img/valores.png" alt="" srcset=""></li>
+                    <li><p>Atendimento Personalizado, Acolhimento e Calor Humano, Excelência Profissional,
+                        Ética e Transparência, Tecnologia de Ponta, Bem-Estar e Autoestima.</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- DIFERENCIAIS -->
+        <h2 class="center">Diferenciais</h2>
+        <section>
+            <div class="row">
+                <ul class="row between">
+                    <li class="box">
+                        <p>Atendimento personalizado de acordo com a necessidade de cada cliente.</p>
+                    </li>
+                    <li class="box">
+                        <p>Ambiente acolhedor e confortável para proporcionar uma experiência positiva aos clientes.</p>
+                    </li>
+                    <li class="box">
+                        <p>Tecnologia avançada, utilizando equipamentos de ponta para procedimentos seguros e eficazes.</p>
+                    </li>
+                    <li class="box">
+                        <p>Educação e Prevenção, conscientizando sobre cuidados preventivos e o conhecimento sobre a saúde da pele.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+</body>
+    
+</html>
