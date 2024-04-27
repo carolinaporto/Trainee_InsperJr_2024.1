@@ -28,7 +28,7 @@
     border: solid gray 0.1rem;
     margin: 0 0.25rem 0 0.25rem;
     padding-bottom: 0.5rem;
-    min-width: 20%;
+    max-width: 23.8rem;
 }
 
 .perfis{
@@ -53,7 +53,7 @@
 }
 
 
-/* CARROSSEL */
+/* CARROSSEL FOTOS */
 .carousel {
     position: relative;
     overflow: hidden;
@@ -93,5 +93,44 @@
 }
 
 .next {
+    right: 0;
+}
+
+
+/* CARROSSEL REVIEWS*/
+.carrossel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carrossel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 10px;
+    /* Espaçamento entre as imagens */
+}
+
+.carrossel-item {
+    flex: 0 0 auto;
+}
+
+.voltar,
+.avancar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.voltar {
+    left: 0;
+}
+
+.avancar {
     right: 0;
 }
