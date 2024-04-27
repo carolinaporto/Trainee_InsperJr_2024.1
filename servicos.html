@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/servicos.css">
+
+    <!-- Fonte corpo principal - NUNITO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap" rel="stylesheet">
+
+    <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Incluir o header -->
+    <div class="header-wrapper" id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+
+    <main>
+        <h1 class="center">Serviços</h1>
+
+        <!-- CONSULTAS  -->
+        <section class="column">
+            <div class="row servicos">
+                <img class="icone" src="img/servicos/calendario.png" alt="">
+                <div class="column border">
+                    <h2>Consultas</h2>
+                    <p>Avaliações profissionais com o auxílio de tecnologia de ponta, permitindo um atendimento personalizado e eficaz</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <h2 class="subdivisao">QuantifiCare</h2>
+                    <div class="box">
+                        <p>Sistema de imagem de última geração que proporciona uma avaliação detalhada e precisa da pele, mapeando características como rugas, manchas e poros e garantindo tratamentos dermatológicos e estéticos personalizados para cada cliente.</p><br>
+                        <p class="obs">Entre em contato para saber mais!</p>
+                    </div>
+                </div>
+                <p></p>
+                <div>
+                    <h2 class="subdivisao">Visia</h2>
+                    <div class="box">
+                        <p>Avançada ferramenta de análise de pele. Utilizando imagens de alta definição, o Visia examina rugas, manchas e poros para fornecer uma avaliação detalhada e garantir resultados adaptados e personalizados às necessidades individuais de cada cliente.</p><br>
+                        <p class="obs">Entre em contato para saber mais!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <!-- TRATAMENTOS  -->
+        <section class="column">
+            <div class="row servicos">
+                <img class="icone" src="img/servicos/tratamentos.png" alt="">
+                <div class="column border">
+                    <h2>Tratamentos</h2>
+                    <p>Alta tecnologia utilizando lasers, elevando o prestígio e a competitividade da clínica.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <h2 class="subdivisao">De manchas</h2>
+                    <div class="box">
+                        <p>Abordagem avançada e eficaz para reduzir ou eliminar manchas indesejadas na pele.  O laser promove a renovação celular e a produção de colágeno, resultando em uma pele mais uniforme, com redução visível das manchas.</p><br>
+                        <p class="obs">Entre em contato para saber mais!</p>
+                    </div>
+                </div>
+                <p></p>
+                <div>
+                    <h2 class="subdivisao">De cicatrizes</h2>
+                    <div class="box">
+                        <p>Técnica avançada que visa melhorar a aparência de cicatrizes na pele. Ao longo das sessões, as cicatrizes tornam-se menos visíveis e a textura da pele é suavizada, resultando em uma aparência mais uniforme e rejuvenescida.</p><br>
+                        <p class="obs">Entre em contato para saber mais!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        
+
+        <!-- PREENCHIMENTO  -->
+        <section class="column">
+            <div class="row servicos">
+                <img class="icone" src="img/servicos/labios.png" alt="">
+                <div class="column border">
+                    <h2>Preenchimento</h2>
+                    <p>Reduzir sinais de envelhecimento e preservar a aparência, além de servir para tratamentos terapêuticos e possuir baixo risco.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <h2 class="subdivisao">Ácido Hialurônico</h2>
+                    <div class="box">
+                        <p>Procedimento estético que utiliza a substância natural para suavizar rugas e aumentar o volume facial, proporcionando resultados imediatos e naturais.</p><br>
+                        <p class="obs">Entre em contato para saber mais!</p>
+                    </div>
+                </div>
+                <p></p>
+                <div>
+                    <h2 class="subdivisao">Ácido Poliláctico</h2>
+                    <div class="box">
+                        <p>Procedimento estético que utiliza a substância para estimular a produção de colágeno, resultando em uma pele mais firme e rejuvenescida ao longo do tempo.</p><br>
+                        <p class="obs">Entre em contato para saber mais!</p>
+                    </div>
+                </div>
+                <p></p>
+                <div>
+                    <h2 class="subdivisao">Toxina Botulínica</h2>
+                    <div class="box">
+                        <p>Procedimento estético que relaxa os músculos faciais, suavizando rugas e linhas de expressão, proporcionando uma aparência rejuvenescida e duradoura.</p><br>
+                        <p class="obs">Entre em contato para saber mais!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <!-- ESTÉTICA  -->
+        <section class="column">
+            <div class="row servicos">
+                <img class="icone" src="img/servicos/estetica.png" alt="">
+                <div class="column border">
+                    <h2>Estética</h2>
+                    <p>Um portfólio abrangente de tratamentos estéticos de ponta, cuidadosamente personalizados.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <h2 class="subdivisao">Limpeza de Pele</h2>
+                    <div class="box">
+                        <p>Eliminação de impurezas, células mortas e excesso de oleosidade, desobstruindo os poros e promovendo uma pele saudável. Eficaz contra acne, previne cravos e aprimora a textura, resultando em uma aparência renovada e revigorante.</p><br>
+                        <p class="obs">Entre em contato para saber mais!</p>
+                    </div>
+                </div>
+                <p></p>
+                <div>
+                    <h2 class="subdivisao">Depilação a Laser</h2>
+                    <div class="box">
+                        <p>Procedimento estético que elimina permanentemente os pelos utilizando feixes de luz para atingir os folículos pilosos, impedindo seu crescimento futuro. Seguro e eficaz, proporciona uma pele suave e livre de pelos indesejados.</p><br>
+                        <p class="obs">Entre em contato para saber mais!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+
+    </main>
+
+    <!-- Incluir o footer -->
+    <div class="footer-wrapper" id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
+
+</body>
+</html>

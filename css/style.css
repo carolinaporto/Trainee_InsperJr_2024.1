@@ -18,7 +18,8 @@ h2{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 1rem 0 1rem 0;
-    padding: 0 0.5rem 0 0.5rem;
+    /* padding: 0 0.5rem 0 0.5rem; */
+    padding: 0.5rem
 }
 
 p, a{
@@ -36,6 +37,10 @@ p, a{
 
 .enfase{
     font-weight: bold;
+}
+
+.obs{
+    font-size: 0.95rem;
 }
 
 /* DISPLAY */
@@ -68,6 +73,17 @@ p, a{
     align-self: center;
     text-align: center;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+
 /* HEADER */
 
 header{
@@ -83,13 +99,32 @@ header img{
     margin-right: 0.6rem;
 }
 
-a{
-    color: black;
-    text-decoration: none;
+/* FOOTER  */
+.cem{
+    width: 100%;
+}
+.trinta{
+    width: 30%;
 }
 
-a:hover{
-    font-weight: bold;
+.quarenta{
+    width: 40%;
+}
+
+footer{
+    border-top: solid gray 0.1rem;
+}
+
+footer h2{
+    margin-bottom: 0;
+}
+
+.icone_P{
+    width: 2rem;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* BODY */
@@ -107,12 +142,19 @@ section{
     text-decoration: none;
     border-radius: 15px;
     text-align: center;
-    width: 50%;
 
     background-color: #B9D2BC;
     color: black;
 
     padding: 0.5rem;
+}
+
+.P{
+    width: 5rem;
+}
+
+.M{
+    width: 25rem;
 }
 
 .botao:hover{
@@ -131,4 +173,25 @@ section{
 /* FUNDO VERDE */
 .bg_verde_claro{
     background-color: #B9D2BC;
+}
+
+.icone{
+    width: 5rem;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.border{
+    margin-bottom: 1rem;
+}
+
+.linhas{
+    border-top: #ACCB96 solid 0.1rem;
+    /* border-bottom: #ACCB96 solid 0.1rem; */
+}
+
+.padding{
+    padding-left: 5rem;
+    font-weight: bold;
 }

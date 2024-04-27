@@ -35,7 +35,7 @@
         <!-- Página principal -->
 
         <!-- SOBRE NÓS -->
-        <h1 class="center">Sobre nós </h1>
+        <h1 class="center">Sobre nós</h1>
 
         <section class="row">
             <img class="logo" src="img/logo_verde.png" alt="" srcset="">
@@ -53,14 +53,70 @@
 
                 <p>Descubra nossa história e compromisso com sua beleza.</p>
                 <br>
-                <a href="#" class="botao">Clique aqui para conhecer mais sobre nós</a>
+                <a href="#" class="botao M">Clique aqui para conhecer mais sobre nós</a>
             </div>
         </section>
         
 
         <!-- SERVIÇOS -->
+        <h1 class="center">Serviços</h1>
+        <div class="row linhas">
+            <img class="icone" src="img/servicos/calendario.png" alt="">
+            <div class="column border">
+                <h2>Consultas</h2>
+                <p>Avaliações profissionais com o auxílio de tecnologia de ponta, permitindo um atendimento personalizado e eficaz</p>
+                <br>
+                <a class="obs botao P">Saiba mais</a>
+            </div>
+        </div>
 
-        <!-- <img src="https://fakeimg.pl/100x100/9ec9b2/909090" alt="" srcset=""> -->
+        <div class="row linhas">
+            <img class="icone" src="img/servicos/tratamentos.png" alt="">
+            <div class="column border">
+                <h2>Tratamentos</h2>
+                <p>Alta tecnologia utilizando lasers, elevando o prestígio e a competitividade da clínica</p>
+                <br><br>
+                <a class="padding">De manchas</a><br>
+                <a class="padding">De cicatrizes</a><br>
+                <a class="obs botao P">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="row linhas">
+            <img class="icone" src="img/servicos/labios.png" alt="">
+            <div class="column border">
+                <h2>Preenchimentos</h2>
+                <p>Reduzir sinais de envelhecimento e preservar a aparência, além de servir para tratamentos terapêuticos e possuir baixo risco</p>
+                <br><br>
+                <a class="padding">Ácido Hialurônico</a><br>
+                <a class="padding">Ácido Poliláctico</a><br>
+                <a class="padding">Toxina Botulínica</a><br><br>
+                <a class="obs botao P">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="row linhas">
+            <img class="icone" src="img/servicos/estetica.png" alt="">
+            <div class="column border">
+                <h2>Estética</h2>
+                <p>Um portfólio abrangente de tratamentos estéticos de ponta, cuidadosamente personalizados</p>
+                <br><br>
+                <a class="padding">Depilação a Laser</a><br>
+                <a class="padding">Limpeza de pele</a><br><br>
+                <a class="obs botao P">Saiba mais</a>
+            </div>
+        </div>
+
     </main>
+
+    <!-- Incluir o footer -->
+    <div class="footer-wrapper" id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
 </body>
 </html>

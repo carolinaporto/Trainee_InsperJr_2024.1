@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sobre-nos.css">
 
+    <script src="js/sobre-nos.js"></script>
+
     <!-- Fonte corpo principal - NUNITO SANS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,33 +95,88 @@
         <!-- DIFERENCIAIS -->
         <section>
             <h2 class="center">Diferenciais</h2>
-            <div>
-                <div class="row">
-                    <ul class="row between">
-                        <li class="diferenciais bg_verde_claro">
-                            <p>Atendimento personalizado de acordo com a necessidade de cada cliente.</p>
-                        </li>
-                        <li class="diferenciais bg_verde_claro">
-                            <p>Ambiente acolhedor e confortável para proporcionar uma experiência positiva aos clientes.</p>
-                        </li>
-                        <li class="diferenciais bg_verde_claro">
-                            <p>Tecnologia avançada, utilizando equipamentos de ponta para procedimentos seguros e eficazes.</p>
-                        </li>
-                        <li class="diferenciais bg_verde_claro">
-                            <p>Educação e Prevenção, conscientizando sobre cuidados preventivos e o conhecimento sobre a saúde da pele.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <table>
+                <tr>
+                    <td class="diferenciais">
+                        <p>Atendimento personalizado de acordo com a necessidade de cada cliente.</p>
+                    </td>
+                    <td class="t4"></td>
+                    <td class="diferenciais">
+                        <p>Ambiente acolhedor e confortável para proporcionar uma experiência positiva aos clientes.</p>
+                    <td>
+                    <td class="t4"></td>
+                    <td class="diferenciais">
+                        <p>Tecnologia avançada, utilizando equipamentos de ponta para procedimentos seguros e eficazes.</p>
+                    </td>
+                    <td class="t4"></td>
+                    <td class="diferenciais">
+                        <p>Educação e Prevenção, conscientizando sobre cuidados preventivos e o conhecimento sobre a saúde da pele.</p>
+                    </td>
+                </tr>
+            </table>
         </section>
 
         <!-- PERGUNTAS FREQUENTES -->
         <h2 class="center">Perguntas Frequentes</h2>
-        
 
+        <div class="faq-container">
+            <div class="faq">
+                <p class="question center">
+                    Quais tratamentos dermatológicos estão disponíveis para rejuvenescimento da pele?
+                    <img class="arrow" src="img/down.png" alt="Seta para baixo">
+                </p>
+                <p class="answer center">
+                    Existem diversos tratamentos dermatológicos disponíveis para rejuvenescer a pele, incluindo peelings químicos, laserterapia, preenchimentos faciais, e toxina botulínica (Botox). O tipo de tratamento recomendado depende das necessidades individuais do paciente, como tipo de pele, condições dermatológicas pré-existentes e objetivos estéticos. Agende uma consulta para discutir as opções mais adequadas para você.</p>
+            </div>
 
+            <div class="faq">
+                <p class="question center">
+                    Quais os riscos do uso de Botox? 
+                    <img class="arrow" src="img/down.png" alt="Seta para baixo">
+                </p>
+                <p class="answer center">
+                    Os principais riscos associados ao uso de Botox incluem possíveis reações alérgicas, dor no local da injeção, hematomas, efeitos colaterais temporários como fraqueza muscular ou ptose palpebral. No entanto, quando administrado por profissionais qualificados, o Botox é geralmente seguro e eficaz para o tratamento de rugas e outras condições dermatológicas.</p>
+            </div>
 
+            <div class="faq">
+                <p class="question center">
+                    Quais os sinais de envelhecimento?
+                    <img class="arrow" src="img/down.png" alt="Seta para baixo">
+                </p>
+                <p class="answer center">
+                    Os sinais de envelhecimento incluem rugas, linhas finas, perda de elasticidade da pele, manchas senis, flacidez, olheiras, e perda de volume facial. Outros sinais podem incluir descoloração da pele, textura irregular, e aparecimento de veias ou vasos sanguíneos mais visíveis.</p>
+            </div>
 
+            <div class="faq">
+                <p class="question center">
+                    Como escolher uma boa dermatologista?
+                    <img class="arrow" src="img/down.png" alt="Seta para baixo">
+                </p>
+                <p class="answer center">
+                    Para escolher uma boa dermatologista, é essencial buscar referências, verificar credenciais profissionais, como formação e experiência, e avaliar a qualidade do atendimento e das instalações. Além disso, considere a especialização da profissional, sua abordagem de tratamento e a confiança que você sente durante a consulta inicial.</p>
+            </div>
+
+            <div class="faq">
+                <p class="question center">
+                    Como posso cuidar da minha pele no dia a dia?
+                    <img class="arrow" src="img/down.png" alt="Seta para baixo">
+                </p>
+                <p class="answer center">
+                    Para manter a saúde da pele, é importante seguir uma rotina de cuidados diários, incluindo limpeza suave, hidratação, proteção solar diária, e uso de produtos adequados ao seu tipo de pele. Além disso, evite fumar, mantenha-se hidratado e tenha uma dieta equilibrada rica em antioxidantes.</p>
+            </div>
+        </div>
+
+    </main>
+    
+    <!-- Incluir o footer -->
+    <div class="footer-wrapper" id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
 </body>
     
 </html>
