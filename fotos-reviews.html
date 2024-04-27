@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fotos-reviews.css">
+
+    <script src="js/java.js"></script>
+
+
+    <!-- Fonte corpo principal - NUNITO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap"
+        rel="stylesheet">
+
+    <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Incluir o header -->
+    <div class="header-wrapper" id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+
+    <main>
+        <!-- FOTOS  -->
+        <h1 class="center">Fotos</h1>
+        <div class="carousel">
+            <div class="carousel-inner">
+
+                <div class="fotos carousel-item">
+                    <img src="img/fotos_reviews/foto1.webp" alt="Imagem 1">
+                </div>
+                <div class="fotos carousel-item">
+                    <img src="img/fotos_reviews/foto2.webp" alt="Imagem 2">
+                </div>
+                <div class="fotos carousel-item">
+                    <img src="img/fotos_reviews/foto3.webp" alt="Imagem 3">
+                </div>
+                <div class="fotos carousel-item">
+                    <img src="img/fotos_reviews/foto4.webp" alt="Imagem 1">
+                </div>
+                <div class="fotos carousel-item">
+                    <img src="img/fotos_reviews/foto5.webp" alt="Imagem 2">
+                </div>
+                <div class="fotos carousel-item">
+                    <img src="img/fotos_reviews/foto6.webp" alt="Imagem 3">
+                </div>
+
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <!-- ANTES E DEPOIS  -->
+        <section>
+            <h1 class="center">Antes/ Depois</h1>
+            <div class="column">
+                <div class="row around">
+                    <img class="antes_depois" src="img/fotos_reviews/antesdepois.jpg" alt="">
+                    <img class="antes_depois" src="img/fotos_reviews/antesdepois2.jpg" alt="">
+                </div>
+
+                <div class="row around">
+                    <div class="center altura">
+                        <h2>Ficou interessado(a)?</h2>
+                        <a href="#">
+                            <p>Clique aqui para conhecer mais sobre os nossos serviços</p>
+                        </a>
+                    </div>
+                    <img class="antes_depois" src="img/fotos_reviews/antesdepois3.jpg" alt="">
+                </div>
+
+                <div class="row around">
+                    <img class="antes_depois" src="img/fotos_reviews/antesdepois4.jpg" alt="">
+                    <img class="antes_depois" src="img/fotos_reviews/antesdepois5.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- AVALIACOES -->
+        <section>
+            <h1 class="center">Avaliações</h1>
+            <div class="row">
+
+                <div class="box bg_verde_claro">
+                    <img class="perfis" src="img/tania.jpg" alt="">
+                    <div class="nome">
+                        <h2>Marina<br>Gomes</h2>
+                        <p class="enfase">Botox</p>
+                    </div>
+
+                    <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia! Minha testa está mais suave e
+                        as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
+                </div>
+
+                <div class="box bg_verde_claro">
+                    <img class="perfis" src="img/tania.jpg" alt="">
+                    <div class="nome">
+                        <h2>Carla<br>Silva</h2>
+                        <p class="enfase">Preenchimento</p>
+                    </div>
+
+                    <p class="center">A Dra. Sofia realizou um preenchimento facial incrível! Meu rosto está mais volumoso e rejuvenescido,
+                         sem parecer artificial. Recomendo a todos que desejam um aspecto natural e revitalizado.</p>
+                </div>
+
+                <div class="box bg_verde_claro">
+                    <img class="perfis" src="img/tania.jpg" alt="">
+                    <div class="nome">
+                        <h2>Camila<br>Oliveira</h2>
+                        <p class="enfase">Depilação</p>
+                    </div>
+
+                    <p class="center">Finalmente me livrei dos pelos indesejados graças à depilação a laser na clínica Tânia Derm.! O procedimento
+                         foi rápido, eficaz e praticamente indolor. Estou realmente muito satisfeita com o resultado!</p>
+                </div>
+
+                <div class="box bg_verde_claro">
+                    <img class="perfis" src="img/tania.jpg" alt="">
+                    <div class="nome">
+                        <h2>Lucas<br>Oliveira</h2>
+                        <p class="enfase">Acne</p>
+                    </div>
+
+                    <p class="center">Minha pele melhorou muito com o tratamento de acne com o Dr. Marcos. A sua abordagem profissional
+                         e acolhedora me deixou confiante durante todo o processo. Recomendo para quem busca resultados eficazes.</p>
+                </div>
+
+                <div class="box bg_verde_claro">
+                    <img class="perfis" src="img/tania.jpg" alt="">
+                    <div class="nome">
+                        <h2>Patrícia<br>Lima</h2>
+                        <p class="enfase">Botox</p>
+                    </div>
+
+                    <p class="center">O botox realizado superou minhas expectativas! Todas as rugas ao redor dos olhos desapareceram,
+                         deixando minha pele com uma aparência mais jovem e fresca. Obrigada, Dra. Tania!!</p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>

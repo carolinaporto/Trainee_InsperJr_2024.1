@@ -59,11 +59,15 @@ p, a{
     justify-content: space-between;
 }
 
+.top{
+    align-items: flex-start;
+}
+
 .center{
     justify-content: center;
     align-self: center;
+    text-align: center;
 }
-
 /* HEADER */
 
 header{
@@ -91,7 +95,11 @@ a:hover{
 /* BODY */
 
 main{
-    margin: 0 7rem 0 7rem;
+    margin: 0 10rem 0 10rem;
+}
+
+section{
+    margin: 1.5rem 0 1.5rem 0;
 }
 
 /* BOTÃO */
@@ -120,26 +128,7 @@ main{
     height: 15rem;
 }
 
-.full_screen{
-    width: 100%;
-    height: auto;
-}
-
-.tania{
-    width: 20rem;
-    height: auto;
-    border-radius: 20px;
-}
-
-
-/* SOBRE NÓS */
-.box{
-    justify-content: center;
-    text-align: center;
-    margin: 1rem 0 1em 0;
-}
-
-.icones{
-    width: 6rem;
-    height: auto;
+/* FUNDO VERDE */
+.bg_verde_claro{
+    background-color: #B9D2BC;
 }

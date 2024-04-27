@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nossa-equipe.css">
+
+    <!-- Fonte corpo principal - NUNITO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap" rel="stylesheet">
+
+    <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Incluir o header -->
+    <div class="header-wrapper" id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+
+    <main>
+        <h1 class="center">Nossa Equipe</h1> 
+
+        <section class="row">
+            <img class="tania" src="img/tania.jpg" alt="">
+            <div class="column bg_verde_claro padding">
+                <br>
+                <h2>Dra. Tania</h2>
+                <br><br>
+                <p>Conheça a Dra. Tânia, nossa dermatologista experiente e apaixonada, líder visionária por trás da Clínica Dermatológica.</p><br>
+                <p>Com mais de uma década de experiência, ela combina conhecimento especializado com um toque humano único, garantindo resultados excepcionais e cuidados personalizados.</p><br>
+                <p>Seja para necessidades médicas ou estéticas, você pode confiar na Dra. Tânia para oferecer o melhor em cuidados dermatológicos, com compaixão e excelência.</p><br>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="align_direita padding">
+                <br>
+                <h2>Dra. Sofia</h2>
+                <br><br>
+                <p>Com uma sólida formação em dermatologia e uma abordagem compassiva, Dra. Sofia é uma profissional dedicada e apaixonada pelo bem-estar da pele. Seja para cuidados médicos especializados ou para procedimentos estéticos, você pode contar com a Dra. Sofia para oferecer o mais alto padrão de cuidado e atenção.</p><br>
+            </div>
+            <img class="medico" src="img/nossa_equipe/medica1.webp" alt="">
+        </section>
+
+        <section class="row">
+            <img class="medico" src="img/nossa_equipe/medico2.webp" alt="">
+            <div class="padding">
+                <br>
+                <h2>Dr. Marcos</h2>
+                <br><br>
+                <p>Com uma abordagem centrada no paciente, Dr. Marcos dedica-se a entender as necessidades individuais de cada pessoa e oferecer soluções personalizadas. Seja para tratamentos médicos ou estéticos, os pacientes podem confiar na expertise e no cuidado atencioso do Dr. Marcos para atender às suas necessidades dermatológicas.</p><br>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="align_direita padding">
+                <br>
+                <h2>Dra. Carolina</h2>
+                <br><br>
+                <p>Dra. Carolina traz consigo uma vasta experiência em dermatologia, combinada com uma abordagem individualizada e empática. Seja para diagnosticar e tratar condições dermatológicas complexas ou para realizar procedimentos estéticos, Dra. Carolina é uma escolha confiável para quem busca cuidados dermatológicos de qualidade.</p><br>
+            </div>
+            <img class="medico" src="img/nossa_equipe/medica3.webp" alt="">
+        </section>
+
+        <section class="row">
+            <img class="medico" src="img/nossa_equipe/medica4.webp" alt="">
+            <div class="padding">
+                <br>
+                <h2>Dra. Isabela</h2>
+                <br><br>
+                <p>Com uma abordagem holística e atenta às necessidades individuais de cada paciente, Dra. Isabela busca proporcionar cuidados dermatológicos completos e personalizados. Seja para questões médicas ou estéticas, os pacientes confiam na Dra. Isabela para orientação, tratamento e resultados excepcionais.</p><br>
+            </div>
+        </section>
+
+    </main>
+
+
+</body>
+</html>

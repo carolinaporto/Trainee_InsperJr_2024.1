@@ -1,0 +1,20 @@
+.tania{
+    width: 25rem;
+    height: auto;
+    border-radius: 15px;
+}
+
+.medico{
+    width: 22rem;
+    height: auto;
+    border-radius: 15px;    
+}
+
+.align_direita{
+    text-align: right;
+}
+
+.padding{
+    padding: 1rem 1rem 0 1rem;
+    border-top: solid gray 0.1rem;
+}
