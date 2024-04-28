@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliar</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <script src="js/avaliar.js"></script>
+
+    <!-- Fonte corpo principal - NUNITO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap"
+        rel="stylesheet">
+
+    <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Incluir o header -->
+    <div class="header-wrapper" id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+
+    <main>
+        <section>
+            <h1 class="center">Avaliar</h1>
+
+            <div>
+                <form action="agendar.html" type="get">
+
+                    <table class="cem">
+                        <tr>
+                            <td rowspan="8" class="box t30">
+                                <div class="center">
+                                    <h2>Agradecimento</h2>
+                                    <p>A clínica agradece a sua avaliação! Ela é de extrema importância para a manutenção dos nossos serviços.</p><br>
+                                    <p>Abaixo você encontrará alguns tópicos relevantes e alinhados à visão da clínica.
+                                    </p><br>
+                                    <p>Encorajamos que você deixe comentários sobre a sua experiência para que possamos melhorar a cada dia.</p><br>
+                                    <p>Considere 0 estrelas como muito ruim e 5 estrelas como muito bom.</p><br>
+                                    <p>A clínica agradece novamente!</p><br>
+                                </div>
+                            </td>
+                            <td class="t10"></td>
+                            <td colspan="3" class="center bg_cinza">
+                                <h2>Realize a sua avaliação</h2>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="center bg_cinza">
+                                <p>Atendimento</p>
+                            </td>
+                            <td class="center bg_cinza">
+                                <div class="rating" data-type="atendimento">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="1">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="2">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="3">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="4">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="5">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="center bg_cinza">
+                                <p>Profissional</p>
+                            </td>
+                            <td class="center bg_cinza">
+                                <div class="rating" data-type="profissional">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="1">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="2">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="3">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="4">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="5">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="center bg_cinza">
+                                <p>Serviço</p>
+                            </td>
+                            <td class="center bg_cinza">
+                                <div class="rating" data-type="servico">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="1">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="2">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="3">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="4">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="5">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="center bg_cinza">
+                                <p>Agendamento</p>
+                            </td>
+                            <td class="center bg_cinza">
+                                <div class="rating" data-type="agendamento">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="1">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="2">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="3">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="4">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="5">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="center bg_cinza">
+                                <p>Ambiente</p>
+                            </td>
+                            <td class="center bg_cinza">
+                                <div class="rating" data-type="ambiente">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="1">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="2">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="3">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="4">
+                                    <img src="img/star-empty.png" alt="Estrela vazia" data-value="5">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="center bg_cinza">
+                                <p>Demais detalhes</p>
+                            </td>
+                            <td class="center bg_cinza"><textarea rows="4" cols="50" alt="Comentários"
+                                    id="comentarios"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="center bg_cinza"></td>
+                            <td class="center bg_cinza" align="left"><br><button type="sumbit"
+                                    id="avaliar">Avaliar</button></td>
+                        </tr>
+
+                    </table>
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Incluir o footer -->
+    <div class="footer-wrapper" id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
+
+</body>
+
+</html>

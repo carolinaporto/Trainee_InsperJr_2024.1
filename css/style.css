@@ -175,6 +175,10 @@ section{
     background-color: #B9D2BC;
 }
 
+.bg_verde{
+    background-color: #ACCB96;
+}
+
 .bg_cinza{
     background-color: #E5E8E3;
 }
@@ -207,8 +211,24 @@ section{
     font-weight: bold;
 }
 
+.all_padding{
+    padding: 1rem;
+}
 
 td{
     height: 2rem;
     vertical-align: middle;
 }
+
+
+
+/* AVALIAR  */
+.rating {
+    display: inline-block;
+  }
+  
+  .rating img {
+    width: 40px;
+    height: 40px;
+  }
+  
