@@ -175,8 +175,19 @@ section{
     background-color: #B9D2BC;
 }
 
+.bg_cinza{
+    background-color: #E5E8E3;
+}
+
 .icone{
     width: 5rem;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mini_icone{
+    width: 1.5rem;
     height: auto;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -194,4 +205,10 @@ section{
 .padding{
     padding-left: 5rem;
     font-weight: bold;
+}
+
+
+td{
+    height: 2rem;
+    vertical-align: middle;
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Médico</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Fonte corpo principal - NUNITO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap" rel="stylesheet">
+
+    <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Incluir o header -->
+    <div class="header-wrapper" id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+
+    <main>
+        <section>
+            <h2 class="center">ÁREA DO MÉDICO</h2>
+            <table>
+                <tr>
+                    <td class="box">
+                        <h2>Login do Cliente</h2>
+                        <form action="agendar.html">
+                            <span>CPF:</span>
+                            <input type="text" id="cpf">
+                        
+                            <span>Senha:</span>
+                            <input type="password" id="senha">
+                        </form>
+                    </td>
+                    <td class="t4"></td>
+                    <td class="box">
+                        <h2>Login do Médico</h2>
+                        <p>Ambiente acolhedor e confortável para proporcionar uma experiência positiva aos clientes.</p>
+                    <td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+     <!-- Incluir o footer -->
+     <div class="footer-wrapper" id="footer"></div>
+     <script>
+         fetch('footer.html')
+             .then(response => response.text())
+             .then(html => {
+                 document.getElementById('footer').innerHTML = html;
+             });
+     </script>
+
+</body>
+</html>
