@@ -26,7 +26,7 @@
     <!-- Incluir o header -->
     <div class="header-wrapper" id="header"></div>
     <script>
-        fetch('header.html')
+        fetch('header-medico.html')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('header').innerHTML = html;
@@ -35,35 +35,20 @@
 
     <main>
         <section>
-            <h1 class="center">Agendar</h1>
+            <h1 class="center">Agenda do dia</h1>
 
             <div class="box t50">
-                <!-- Formulário de Cadastro -->
-                <h2>Solicitar Atendimento</h2>
-                <form action="agendar.html" type="get">
+                <h2>Filtrar agenda</h2>
+                <form action="#" type="get">
 
                     <table class="cem">
-                        <tr>
-                            <td align="right">
-                                <label for="servicos">Serviço:</label>
-                            </td>
-                            <td align="left">
-                                <select id="servicos">
-                                    <option value="consulta">Consulta</option>
-                                    <option value="mancha">Tratamento de Manchas</option>
-                                    <option value="cicatriz">Tratamento de Cicatrizes</option>
-                                    <option value="preenchimentos">Preenchimentos</option>
-                                    <option value="limpeza_pele">Limpeza de Pele</option>
-                                    <option value="depilacao">Depilação a Laser</option>
-                                </select>
-                            </td>
-                        </tr>
                         <tr>
                             <td align="right">
                                 <label for="profissional">Profissional:</label>
                             </td>
                             <td align="left">
                                 <select id="profissional">
+                                    <option value="">Selecione o profissional</option>
                                     <option value="Tania">Dra. Tania</option>
                                     <option value="Sofia">Dra. Sofia</option>
                                     <option value="Marcos">Dr. Marcos</option>
@@ -81,33 +66,8 @@
                             </td>
                         </tr>
                         <tr>
-
-                            <td align="right">
-                                <label for="horario">Horário:</label>
-                            </td>
-                            <td align="left">
-                                <select id="horario">
-                                    <option value="0800">8:00</option>
-                                    <option value="0900">9:00</option>
-                                    <option value="1000">10:00</option>
-                                    <option value="1100">11:00</option>
-                                    <option value="1200">12:00</option>
-                                    <option value="1300">13:00</option>
-                                    <option value="1400">14:00</option>
-                                    <option value="1500">15:00</option>
-                                    <option value="1600">16:00</option>
-                                    <option value="1700">17:00</option>
-                                    <option value="1800">18:00</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right"><input type="checkbox" id="contato"></td>
-                            <td align="left"><p class="obs">Eu aceito receber contato de avaliação do meu atendimento por email</p></td>
-                        </tr>
-                        <tr>
                             <td></td>
-                            <td align="left"><br><button type="sumbit" id="agendamento">Solicitar</button></td>
+                            <td align="left"><br><button type="sumbit" id="agenda_do_dia">Filtrar</button></td>
                         </tr>
                     </table>
                 </form>
@@ -116,51 +76,51 @@
 
             <!-- HISTORICO -->
             <div>
-                <h2 class="center">Histórico de atendimentos</h2>
+                <h2 class="center">Planejamento</h2>
                 <table class="cem">
                     <tr class="bg_verde_claro">
                         <td><p class="enfase">Data/Hora</p></td>
-                        <td><p class="enfase">Procedimento</p></td>
                         <td><p class="enfase">Profissional</p></td>
+                        <td><p class="enfase">Paciente</p></td>
                         <td><p class="enfase">Receita</p></td>
-                        <td><p class="enfase">Avaliar</p></td>
-                        <td><p class="enfase">Recomendação</p></td>
+                        <td><p class="enfase">Status</p></td>
+                        <td><p class="enfase">Atender</p></td>
                     </tr>
 
                     <tr>
-                        <td><p>23/05/24 12:00</p></td>
-                        <td><p>Consulta</p></td>
+                        <td><p>09/05/24 12:10</p></td>
                         <td><p>Dra. Tania</p></td>
+                        <td><p>Antonio Riscala</p></td>
                         <td><a href="receita.pdf"><img class="mini_icone" src="img/receita.png" alt=""></a></td>
-                        <td><a href="avaliar.html"><img class="mini_icone" src="img/avaliar.png" alt=""></a></td>
-                        <td><a hreh="recomendacao.pdf"><img class="mini_icone" src="img/recomendacao.png" alt=""></a></td>
+                        <td><p class="obs">Agendado</p></td>
+                        <td><a href="atendimento.html"><img class="mini_icone" src="img/consulta-medica.png" alt=""></a></td>
                     </tr>
 
                     <tr class="bg_cinza">
                         <td><p>19/03/24 15:00</p></td>
-                        <td><p>Preenchimento</p></td>
                         <td><p>Dra. Carolina</p></td>
+                        <td><p>Gustavo Mota</p></td>
                         <td><a href="receita.pdf"><img class="mini_icone" src="img/receita.png" alt=""></a></td>
-                        <td><a href="avaliar.html"><img class="mini_icone" src="img/avaliar.png" alt=""></a></td>
-                        <td><a hreh="recomendacao.pdf"><img class="mini_icone" src="img/recomendacao.png" alt=""></a></td>
+                        <td><p class="obs">Realizado</p></td>
+                        <td><a href="atendimento.html"><img class="mini_icone" src="img/consulta-medica.png" alt=""></a></td>
                     </tr>
 
                     <tr>
                         <td><p>06/01/24 08:00</p></td>
-                        <td><p>Limpeza de Pele</p></td>
                         <td><p>Dr. Marcos</p></td>
+                        <td><p>Maria Carolina Porto</p></td>
                         <td><a href="receita.pdf"><img class="mini_icone" src="img/receita.png" alt=""></a></td>
-                        <td><a href="avaliar.html"><img class="mini_icone" src="img/avaliar.png" alt=""></a></td>
-                        <td><a hreh="recomendacao.pdf"><img class="mini_icone" src="img/recomendacao.png" alt=""></a></td>
+                        <td><p class="obs">Cancelado</p></td>
+                        <td><a href="atendimento.html"><img class="mini_icone" src="img/consulta-medica.png" alt=""></a></td>
                     </tr>
 
                     <tr class="bg_cinza">
                         <td><p>12/11/23 11:00</p></td>
-                        <td><p>Consulta</p></td>
                         <td><p>Dra. Tania</p></td>
+                        <td><p>Ricardo Jurado</p></td>
                         <td><a href="receita.pdf"><img class="mini_icone" src="img/receita.png" alt=""></a></td>
-                        <td><a href="avaliar.html"><img class="mini_icone" src="img/avaliar.png" alt=""></a></td>
-                        <td><a hreh="recomendacao.pdf"><img class="mini_icone" src="img/recomendacao.png" alt=""></a></td>
+                        <td><p class="obs">Realizado</p></td>
+                        <td><a href="atendimento.html"><img class="mini_icone" src="img/consulta-medica.png" alt=""></a></td>
                     </tr>
 
                 </table>

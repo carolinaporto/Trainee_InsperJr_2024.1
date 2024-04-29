@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tania Derm</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Fonte corpo principal - NUNITO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap"
+        rel="stylesheet">
+
+    <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Incluir o header -->
+    <div class="header-wrapper" id="header"></div>
+    <script>
+        fetch('header-medico.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+
+    <main>
+        <section>
+            <h1 class="center">Estatísticas</h1>
+
+            <div class="box t50">
+                <!-- Formulário de Cadastro -->
+                <h2>Filtrar</h2>
+                <form action="estatisticas.html" type="get">
+
+                    <table class="cem">
+                        <tr>
+                            <td align="right">
+                                <label for="profissional">Profissional:</label>
+                                <select id="profissional">
+                                    <option value="">Selecione o profissional</option>
+                                    <option value="Tania">Dra. Tania</option>
+                                    <option value="Sofia">Dra. Sofia</option>
+                                    <option value="Marcos">Dr. Marcos</option>
+                                    <option value="Isabela">Dra. Isabela</option>
+                                    <option value="Carolina">Dra. Carolina</option>
+                                </select>
+                            </td>
+
+                            <td align="right">
+                                <label for="servicos">Serviço:</label>
+                                <select id="servicos">
+                                    <option value="">Selecione o serviço</option>
+                                    <option value="consulta">Consulta</option>
+                                    <option value="mancha">Tratamento de Manchas</option>
+                                    <option value="cicatriz">Tratamento de Cicatrizes</option>
+                                    <option value="preenchimentos">Preenchimentos</option>
+                                    <option value="limpeza_pele">Limpeza de Pele</option>
+                                    <option value="depilacao">Depilação a Laser</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td align="right">
+                                <label for="data-inicial">Data Inicial:</label>
+                                <input type="date" id="data-inicial">
+                            </td>
+                            <td align="right">
+                                <label for="data-final">Data Final:</label>
+                                <input type="date" id="data-final">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="left"><br><button type="sumbit" id="agendamento">Filtrar</button></td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+
+            <div class="box cem">
+                <h2 class="center">Gráficos</h2>
+                <table>
+                    <tr>
+                        <td class="t50">
+                            <p>Serviços</p>
+                            <img src="img/grafico-avaliacao.png" alt="" width="100%" height="auto">
+                        </td>
+
+                        <td class="t50">
+                            <p>Avaliações</p>
+                            <img src="img/grafico-avaliacao.png" alt=""  width="100%" height="auto">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="t50">
+                            <p>Ambiente</p>
+                            <img src="img/grafico-avaliacao.png" alt="" width="100%" height="auto">
+                        </td>
+
+                        <td class="t50">
+                            <p>Agendamento</p>
+                            <img src="img/grafico-avaliacao.png" alt=""  width="100%" height="auto">
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            
+        </section>
+
+    </main>
+
+    <!-- Incluir o footer -->
+    <div class="footer-wrapper" id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tania Derm</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Fonte corpo principal - NUNITO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap"
+        rel="stylesheet">
+
+    <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Incluir o header -->
+    <div class="header-wrapper" id="header"></div>
+    <script>
+        fetch('header-medico.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+
+    <main>
+        <section>
+            <h1 class="center">Documentos</h1>
+
+            <div class="box bg_cinza">
+                <h2 class="center">Upload de Documentos</h2>
+                <form action="documentos.html" method="get" enctype="multipart/form-data">
+                    <label for="fileUpload">Selecione um arquivo:</label>
+                    <input type="file" id="fileUpload" name="fileUpload">
+                    <button type="submit">Upload</button>
+                </form>
+            </div>
+            <div>
+                <h2 class="center">Lista de Documentos</h2>
+                <table class="cem">
+                    <tr class="bg_verde_claro">
+                        <td align="left">
+                            <p class="enfase">Nome do Documento</p>
+                        </td>
+                        <td align="left">
+                            <p class="enfase">Download</p>
+                        </td>
+                        <td align="left">
+                            <p class="enfase">Excluir</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <p>Termo de Conscentimento da LGPD</p>
+                        </td>
+                        <td align="left">
+                            <a href="#"><img class="mini_icone" src="img/download.png" alt=""></a>
+                        </td>
+                        <td align="left">
+                            <a href="#"><img class="mini_icone" src="img/lixeira.png" alt=""></a>
+                        </td>
+                    </tr>
+
+                    <tr class="bg_cinza">
+                        <td align="left">
+                            <p>Termo de Responsabilidade</p>
+                        </td>
+                        <td align="left">
+                            <a href="#"><img class="mini_icone" src="img/download.png" alt=""></a>
+                        </td>
+                        <td align="left">
+                            <a href="#"><img class="mini_icone" src="img/lixeira.png" alt=""></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="left">
+                            <p>Ficha de Anamnese Dermatológica</p>
+                        </td>
+                        <td align="left">
+                            <a href="#"><img class="mini_icone" src="img/download.png" alt=""></a>
+                        </td>
+                        <td align="left">
+                            <a href="#"><img class="mini_icone" src="img/lixeira.png" alt=""></a>
+                        </td>
+                    </tr>
+
+                    <tr class="bg_cinza">
+                        <td align="left">
+                            <p>Autorização para Tratamento Menores de Idade</p>
+                        </td>
+                        <td align="left">
+                            <a href="#"><img class="mini_icone" src="img/download.png" alt=""></a>
+                        </td>
+                        <td align="left">
+                            <a href="#"><img class="mini_icone" src="img/lixeira.png" alt=""></a>
+                        </td>
+                    </tr>
+
+                    
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Incluir o footer -->
+    <div class="footer-wrapper" id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
+
+</body>
+
+</html>

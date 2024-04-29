@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tania Derm</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Fonte corpo principal - NUNITO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap"
+        rel="stylesheet">
+
+    <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Incluir o header -->
+    <div class="header-wrapper" id="header"></div>
+    <script>
+        fetch('header-medico.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+
+    <main>
+        <section>
+            <h1 class="center">Avaliação</h1>
+
+            <div class="box t50">
+                <!-- Formulário de Cadastro -->
+                <h2>Filtrar</h2>
+                <form action="estatisticas.html" type="get">
+
+                    <table class="cem">
+                        <tr>
+                            <td align="right">
+                                <label for="profissional">Profissional:</label>
+                                <select id="profissional">
+                                    <option value="">Selecione o profissional</option>
+                                    <option value="Tania">Dra. Tania</option>
+                                    <option value="Sofia">Dra. Sofia</option>
+                                    <option value="Marcos">Dr. Marcos</option>
+                                    <option value="Isabela">Dra. Isabela</option>
+                                    <option value="Carolina">Dra. Carolina</option>
+                                </select>
+                            </td>
+
+                            <td align="right">
+                                <label for="servicos">Serviço:</label>
+                                <select id="servicos">
+                                    <option value="">Selecione o serviço</option>
+                                    <option value="consulta">Consulta</option>
+                                    <option value="mancha">Tratamento de Manchas</option>
+                                    <option value="cicatriz">Tratamento de Cicatrizes</option>
+                                    <option value="preenchimentos">Preenchimentos</option>
+                                    <option value="limpeza_pele">Limpeza de Pele</option>
+                                    <option value="depilacao">Depilação a Laser</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="left"><br><button type="sumbit" id="agendamento">Filtrar</button></td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+
+
+            <!-- HISTORICO -->
+            <div>
+                <h2 class="center">Lista de Avaliações</h2>
+                <table class="cem">
+                    <tr class="bg_verde_claro">
+                        <td><p class="enfase">Data/Hora</p></td>
+                        <td><p class="enfase">Profissional</p></td>
+                        <td><p class="enfase">Paciente</p></td>
+                        <td><p class="enfase">Status</p></td>
+                    </tr>
+
+                    <tr class="bg_cinza">
+                        <td><p>09/05/24 12:10</p></td>
+                        <td><p>Dra. Tania</p></td>
+                        <td><p>Antonio Riscala</p></td>
+                        <td><p class="obs">Agendado</p></td>
+                    </tr>
+                    <tr class="bg_cinza">
+                        <td colspan="4">
+                            <p>Escrever escrever escrever</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><p>19/03/24 15:00</p></td>
+                        <td><p>Dra. Carolina</p></td>
+                        <td><p>Gustavo Mota</p></td>
+                        <td><p class="obs">Realizado</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <p>Escrever escrever escrever</p>
+                        </td>
+                    </tr>
+
+                    <tr class="bg_cinza">
+                        <td><p>06/01/24 08:00</p></td>
+                        <td><p>Dr. Marcos</p></td>
+                        <td><p>Maria Carolina Porto</p></td>
+                        <td><p class="obs">Cancelado</p></td>
+                    </tr>
+                    <tr class="bg_cinza">
+                        <td colspan="4">
+                            <p>Escrever escrever escrever</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><p>12/11/23 11:00</p></td>
+                        <td><p>Dra. Tania</p></td>
+                        <td><p>Ricardo Jurado</p></td>
+                        <td><p class="obs">Realizado</p></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <p>Escrever escrever escrever</p>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Incluir o footer -->
+    <div class="footer-wrapper" id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
+
+</body>
+
+</html>

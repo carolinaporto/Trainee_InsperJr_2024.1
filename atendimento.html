@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tania Derm</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Fonte corpo principal - NUNITO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap"
+        rel="stylesheet">
+
+    <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Incluir o header -->
+    <div class="header-wrapper" id="header"></div>
+    <script>
+        fetch('header-medico.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+
+    <main>
+        <section>
+            <h1 class="center">Atendimento</h1>
+
+            <div class="box bg_cinza">
+                <!-- Dados do paciente -->
+                <table class="cem">
+                    <tr>
+                        <td align="center">
+                            <p class="enfase">Nome do Paciente</p>
+                        </td>
+                        <td align="center">
+                            <p class="enfase">Procedimento</p>
+                        </td>
+                        <td align="center">
+                            <p class="enfase">Data / Hora</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <p>Antonio Riscala</p>
+                        </td>
+                        <td align="center">
+                            <p>Consulta</p>
+                        </td>
+                        <td align="center">
+                            <p>09/05/24 / 12:10</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="box bg_cinza">
+
+                <form action="agenda-do-dia.html" type="get">
+
+                    <table class="cem">
+                        <tr>
+                            <td align="center" >
+                                <p class=enfase>Anotações do Atendimento</p>
+                                <textarea rows="10" cols="40" alt="Anotações" id="anotacao"></textarea>
+                            </td>
+                            <td align="center">
+                                <p class=enfase>Receituário</p>
+                                <textarea rows="10" cols="40" alt="Receituário" id="receituario"></textarea>
+                            </td>
+                            <td align="center">
+                                <p class=enfase>Recomendações</p>
+                                <textarea rows="10" cols="40" alt="Recomendações" id="recomendacoes"></textarea>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2">
+                                <form action="#" method="get" enctype="multipart/form-data"><br>
+                                    <label for="fileUpload">Selecione um arquivo:</label>
+                                    <input type="file" id="fileUpload" name="fileUpload">
+                                </form>
+                            </td>
+                            <!-- <td></td> -->
+                            <td align="center"><br><button type="sumbit" id="agendamento">Confirmar</button></td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Incluir o footer -->
+    <div class="footer-wrapper" id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
+
+</body>
+
+</html>
