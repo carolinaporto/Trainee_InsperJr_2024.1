@@ -148,6 +148,18 @@ section {
     border-radius: 15px;    
 }   
 
+    /* serviços */
+.icone_servicos{
+    width: 7%;
+    height: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.subdivisao{
+    background-color: #B9D2BC;
+    margin-bottom: 0;
+}
+
 
 /* TABELA*/
 .valign_middle {
@@ -166,10 +178,6 @@ section {
     width: 10%;
 }
 
-.t20 {
-    width: 20%;
-}
-
 .t30 {
     width: 30%;
 }
@@ -178,8 +186,8 @@ section {
     width: 40%;
 }
 
-.t50 {
-    width: 50%;
+.t48{
+    width: 48%;
 }
 
 /* INDEX.HTML  */
@@ -221,6 +229,15 @@ section {
 }
 .align_direita{
     text-align: right;
+}
+
+/* SERVIÇOS.HTML  */
+.servicos{
+    border-top: solid 0.25rem #B9D2BC;
+}
+
+.paddings{
+    padding: 1%;
 }
 
 /* LINK */
@@ -329,8 +346,7 @@ body {
         padding: 1%;
     }
 
-    p,
-    .enfase {
+    p, .enfase {
         font-size: small;
     }
 
@@ -429,5 +445,13 @@ body {
         align-self: center;
         margin-bottom: 5%;
     }   
+
+    /* serviços */
+    .icone_servicos{
+        width: 11%;
+        height: auto;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
 
 }
