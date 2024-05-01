@@ -112,7 +112,7 @@ section {
 
     /* footer e tabelas */
 .icone_P {
-    width: 10%;
+    width: 15%;
     height: auto;
     padding: 2%;
 }
@@ -193,6 +193,9 @@ section {
 
 .t10 {
     width: 10%;
+}
+.t20 {
+    width: 20%;
 }
 
 .t30 {
