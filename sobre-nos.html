@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nós</title>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sobre-nos.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="css/sobre-nos.css"> -->
 
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/header.js"></script>
     <script src="js/sobre-nos.js"></script>
 
     <!-- Fonte corpo principal - NUNITO SANS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap"
+        rel="stylesheet">
 
     <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,63 +27,78 @@
 </head>
 
 <body>
-    <!-- Incluir o header -->
-    <div class="header-wrapper" id="header"></div>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header').innerHTML = html;
-            });
-    </script>
-    <img class="full_screen" src="img/clinica_sobre_nos.jpg" alt="" srcset="">
+    <!-- HEADER  -->
+    <header>
+        <div class="navbar" id="myNavbar">
+            <a href="index.html">Tania Derm</a>
+            <a href="sobre-nos.html">Sobre nós</a>
+            <a href="nossa-equipe.html">Nossa equipe</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="fotos-reviews.html">Fotos & Reviews</a>
+            <a href="agendar.html">Área do Cliente</a>
+            <a href="medico.html">Área do Médico</a>
+            <a href="javascript:void(0);" id="menu" class="icon">
+                <img src="img/down.png" class="icone" alt="">
+            </a>
+        </div>
+    </header>
 
     <main class="column">
 
         <!-- SOBRE NÓS -->
-        <section>
-            <h1 class="center">Sobre nós</h1>
+        <h1 class="center first_h1">Sobre nós</h1>
 
-            <div class="row">
-                <img class="tania" src="img/tania.jpg" alt="" srcset="">
-                <div class="column padding">
-                    <h2>História da Clínica</h2>
-                    <p>Na Clínica Dermatológica da Doutora Tânia, a história se entrelaça com a paixão e expertise da Dra. Tânia,
-                        uma dermatologista experiente e dedicada.</p>
-                    <br>
-                    <p>Desde a inauguração, tornamo-nos um ponto de referência para quem busca tratamentos dermatológicos de qualidade,
-                        oferecendo serviços que vão desde cuidados médicos especializados até procedimentos estéticos avançados.</p>
-                    <br>
-                    <p>Sob a liderança da Dra. Tânia, comprometemo-nos em proporcionar uma experiência única e acolhedora, onde cada
-                        paciente é tratado com respeito, compreensão e dedicação.</p>
-
-                    <br><br>
-
-                    <p>Descubra nossa história e compromisso com sua beleza.</p>
-                    <br>
-                    <a href="#" class="botao">Saiba mais sobre a Dra. Tania</a>
-                </div>
+        <div class="row">
+            <img class="tania" src="img/tania.jpg" alt="" srcset="">
+            <div class="column">
+                <h2 class="first_h2">História da Clínica</h2>
+                <p class="uma_linha">Na Clínica Dermatológica da Doutora Tânia, a história se entrelaça com a paixão e
+                    expertise da Dra. Tânia,
+                    uma dermatologista experiente e dedicada.</p>
+                <p class="uma_linha">Desde a inauguração, tornamo-nos um ponto de referência para quem busca tratamentos
+                    dermatológicos de qualidade,
+                    oferecendo serviços que vão desde cuidados médicos especializados até procedimentos estéticos
+                    avançados.</p>
+                <p class="uma_linha">Sob a liderança da Dra. Tânia, comprometemo-nos em proporcionar uma experiência
+                    única e acolhedora, onde cada
+                    paciente é tratado com respeito, compreensão e dedicação.</p>
+                <p class="uma_linha">Descubra nossa história e compromisso com sua beleza.</p>
             </div>
-        </section>
+        </div>
 
         <!-- MISSÃO, VISÃO, VALORES  -->
         <section>
             <table>
                 <tr class="center">
-                    <td class="center"><h2>Visão</h2></td>
-                    <td class="center"><h2>Missão</h2></td>
-                    <td class="center"><h2>Valores</h2></td>
-                </tr>
-                <tr class="center">
-                    <td><img class="icones" src="img/visao.png" alt=""></td>
-                    <td><img class="icones"src="img/missao.png" alt=""></td>
-                    <td><img class="icones"src="img/valores.png" alt=""></td>
-                </tr>
-                <tr class="center">
-                    <td><p>Ser reconhecida pela excelência no atendimento humanizado, pela expertise profissional e pela vanguarda tecnológica, promovendo o bem-estar e a autoestima dos nossos clientes.</p></td>
-                    <td><p>Proporcionar aos nossos clientes uma experiência dermatológica excepcional, com foco no cuidado personalizado, na qualidade dos serviços e na criação de um ambiente acolhedor e seguro.</p>
+                    <td class="center">
+                        <h2 class="bg_verde_claro">Visão</h2>
                     </td>
-                    <td><p>Atendimento Personalizado, Acolhimento e Calor Humano, Excelência Profissional, Ética e Transparência, Tecnologia de Ponta, Bem-Estar e Autoestima.</p></td>
+                    <td class="center">
+                        <h2 class="bg_verde_claro">Missão</h2>
+                    </td>
+                    <td class="center">
+                        <h2 class="bg_verde_claro">Valores</h2>
+                    </td>
+                </tr>
+                <tr class="center">
+                    <td><img class="icone_sobre_nos" src="img/visao.png" alt=""></td>
+                    <td><img class="icone_sobre_nos" src="img/missao.png" alt=""></td>
+                    <td><img class="icone_sobre_nos" src="img/valores.png" alt=""></td>
+                </tr>
+                <tr class="center">
+                    <td>
+                        <p>Ser reconhecida pela excelência no atendimento humanizado, pela expertise profissional e pela
+                            vanguarda tecnológica, promovendo o bem-estar e a autoestima dos nossos clientes.</p>
+                    </td>
+                    <td>
+                        <p>Proporcionar aos nossos clientes uma experiência dermatológica excepcional, com foco no
+                            cuidado personalizado, na qualidade dos serviços e na criação de um ambiente acolhedor e
+                            seguro.</p>
+                    </td>
+                    <td>
+                        <p>Atendimento Personalizado, Acolhimento e Calor Humano, Excelência Profissional, Ética e
+                            Transparência, Tecnologia de Ponta, Bem-Estar e Autoestima.</p>
+                    </td>
                 </tr>
             </table>
         </section>
@@ -87,7 +106,7 @@
         <!-- DIFERENCIAIS -->
         <section>
             <h2 class="center">Diferenciais</h2>
-            <table>
+            <table class="t100">
                 <tr>
                     <td class="diferenciais">
                         <p>Atendimento personalizado de acordo com a necessidade de cada cliente.</p>
@@ -95,13 +114,16 @@
                     <td class="t4"></td>
                     <td class="diferenciais">
                         <p>Ambiente acolhedor e confortável para proporcionar uma experiência positiva aos clientes.</p>
-                    <td>
-                    <td class="t4"></td>
-                        <p>Tecnologia avançada, utilizando equipamentos de ponta para procedimentos seguros e eficazes.</p>
                     </td>
                     <td class="t4"></td>
                     <td class="diferenciais">
-                        <p>Educação e Prevenção, conscientizando sobre cuidados preventivos e o conhecimento sobre a saúde da pele.</p>
+                        <p>Tecnologia avançada, utilizando equipamentos de ponta para procedimentos seguros e eficazes.
+                        </p>
+                    </td>
+                    <td class="t4"></td>
+                    <td class="diferenciais">
+                        <p>Educação e Prevenção, conscientizando sobre cuidados preventivos e o conhecimento sobre a
+                            saúde da pele.</p>
                     </td>
                 </tr>
             </table>
@@ -117,16 +139,23 @@
                     <img class="arrow" src="img/down.png" alt="Seta para baixo">
                 </p>
                 <p class="answer center">
-                    Existem diversos tratamentos dermatológicos disponíveis para rejuvenescer a pele, incluindo peelings químicos, laserterapia, preenchimentos faciais, e toxina botulínica (Botox). O tipo de tratamento recomendado depende das necessidades individuais do paciente, como tipo de pele, condições dermatológicas pré-existentes e objetivos estéticos. Agende uma consulta para discutir as opções mais adequadas para você.</p>
+                    Existem diversos tratamentos dermatológicos disponíveis para rejuvenescer a pele, incluindo peelings
+                    químicos, laserterapia, preenchimentos faciais, e toxina botulínica (Botox). O tipo de tratamento
+                    recomendado depende das necessidades individuais do paciente, como tipo de pele, condições
+                    dermatológicas pré-existentes e objetivos estéticos. Agende uma consulta para discutir as opções
+                    mais adequadas para você.</p>
             </div>
 
             <div class="faq">
                 <p class="question center">
-                    Quais os riscos do uso de Botox? 
+                    Quais os riscos do uso de Botox?
                     <img class="arrow" src="img/down.png" alt="Seta para baixo">
                 </p>
                 <p class="answer center">
-                    Os principais riscos associados ao uso de Botox incluem possíveis reações alérgicas, dor no local da injeção, hematomas, efeitos colaterais temporários como fraqueza muscular ou ptose palpebral. No entanto, quando administrado por profissionais qualificados, o Botox é geralmente seguro e eficaz para o tratamento de rugas e outras condições dermatológicas.</p>
+                    Os principais riscos associados ao uso de Botox incluem possíveis reações alérgicas, dor no local da
+                    injeção, hematomas, efeitos colaterais temporários como fraqueza muscular ou ptose palpebral. No
+                    entanto, quando administrado por profissionais qualificados, o Botox é geralmente seguro e eficaz
+                    para o tratamento de rugas e outras condições dermatológicas.</p>
             </div>
 
             <div class="faq">
@@ -135,7 +164,9 @@
                     <img class="arrow" src="img/down.png" alt="Seta para baixo">
                 </p>
                 <p class="answer center">
-                    Os sinais de envelhecimento incluem rugas, linhas finas, perda de elasticidade da pele, manchas senis, flacidez, olheiras, e perda de volume facial. Outros sinais podem incluir descoloração da pele, textura irregular, e aparecimento de veias ou vasos sanguíneos mais visíveis.</p>
+                    Os sinais de envelhecimento incluem rugas, linhas finas, perda de elasticidade da pele, manchas
+                    senis, flacidez, olheiras, e perda de volume facial. Outros sinais podem incluir descoloração da
+                    pele, textura irregular, e aparecimento de veias ou vasos sanguíneos mais visíveis.</p>
             </div>
 
             <div class="faq">
@@ -144,7 +175,10 @@
                     <img class="arrow" src="img/down.png" alt="Seta para baixo">
                 </p>
                 <p class="answer center">
-                    Para escolher uma boa dermatologista, é essencial buscar referências, verificar credenciais profissionais, como formação e experiência, e avaliar a qualidade do atendimento e das instalações. Além disso, considere a especialização da profissional, sua abordagem de tratamento e a confiança que você sente durante a consulta inicial.</p>
+                    Para escolher uma boa dermatologista, é essencial buscar referências, verificar credenciais
+                    profissionais, como formação e experiência, e avaliar a qualidade do atendimento e das instalações.
+                    Além disso, considere a especialização da profissional, sua abordagem de tratamento e a confiança
+                    que você sente durante a consulta inicial.</p>
             </div>
 
             <div class="faq">
@@ -153,12 +187,14 @@
                     <img class="arrow" src="img/down.png" alt="Seta para baixo">
                 </p>
                 <p class="answer center">
-                    Para manter a saúde da pele, é importante seguir uma rotina de cuidados diários, incluindo limpeza suave, hidratação, proteção solar diária, e uso de produtos adequados ao seu tipo de pele. Além disso, evite fumar, mantenha-se hidratado e tenha uma dieta equilibrada rica em antioxidantes.</p>
+                    Para manter a saúde da pele, é importante seguir uma rotina de cuidados diários, incluindo limpeza
+                    suave, hidratação, proteção solar diária, e uso de produtos adequados ao seu tipo de pele. Além
+                    disso, evite fumar, mantenha-se hidratado e tenha uma dieta equilibrada rica em antioxidantes.</p>
             </div>
         </div>
 
     </main>
-    
+
     <!-- Incluir o footer -->
     <div class="footer-wrapper" id="footer"></div>
     <script>
@@ -169,5 +205,5 @@
             });
     </script>
 </body>
-    
+
 </html>
