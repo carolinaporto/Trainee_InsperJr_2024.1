@@ -103,7 +103,6 @@ section {
     width: 25%;
     height: auto;
 }
-
 .icone_index {
     width: 8%;
     height: auto;
@@ -123,13 +122,11 @@ section {
     width: 100%;
     height: auto;
 }
-
 .tania_sobre_nos {
     width: 20%;
     height: auto;
     border-radius: 20px;
 }
-
 .icone_sobre_nos {
     width: 25%;
     height: auto;
@@ -141,7 +138,6 @@ section {
     height: auto;
     border-radius: 20px;
 }
-
 .medico{
     width: 25%;
     height: auto;
@@ -155,10 +151,31 @@ section {
     padding-left: 1%;
     padding-right: 1%;
 }
-.subdivisao{
-    background-color: #B9D2BC;
-    margin-bottom: 0;
+
+    /* fotos e reviews  */
+.fotos{
+    width: 20%;
+    height: auto;
+    border-radius: 15px;
 }
+.antes_depois{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 1%;
+}
+.perfis{
+    width: 25%;
+    height: auto;
+    margin: 0 1% 0 1%;
+    border-radius: 50%;
+    border: solid gray 0.1rem;
+
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
 
 
 /* TABELA*/
@@ -190,21 +207,20 @@ section {
     width: 48%;
 }
 
+
+
 /* INDEX.HTML  */
 .servicos_index {
     margin: 0 0 1% 5%;
 }
-
 .linhas_superiores {
     border-top: #B9D2BC solid 0.2rem;
     margin-bottom: 2%;
 }
-
 .linhas_inferiores {
     border-bottom: #E5E8E3 solid 0.1rem;
     padding-bottom: 2%;
 }
-
 .linhas_esquerda {
     border-left: #B9D2BC solid 0.1rem;
 }
@@ -235,10 +251,41 @@ section {
 .servicos{
     border-top: solid 0.25rem #B9D2BC;
 }
-
 .paddings{
     padding: 1%;
 }
+
+/* FOTOS & REVIEWS.HTML  */
+.saiba_mais{
+    width: 100%;
+    height: auto;
+    padding: 1% 0 1% 0;
+    border: solid gray 0.1rem;
+    border-radius: 50px;
+    background-color: #B9D2BC;
+}
+.box{
+    position: relative;
+    border: solid gray 0.1rem;
+    margin: 0 0.5% 0 0.5%;
+    padding-bottom: 1%;
+    min-width: 20rem;
+}
+.nome{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+.carousel{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
 
 /* LINK */
 .link {
@@ -385,6 +432,13 @@ body {
     .icone_sobre_nos {
         width: 35%;
         height: auto;
+    }
+
+    /* fotos&reviews */
+    .fotos{
+        width: 30%;
+        height: auto;
+        border-radius: 15px;
     }
 
 }

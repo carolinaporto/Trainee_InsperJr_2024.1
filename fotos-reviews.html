@@ -7,13 +7,8 @@
     <title>Fotos e Reviews</title>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fotos-reviews.css">
-
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/header.js"></script>
-    <script src="js/fotos-reviews.js"></script>
-
 
     <!-- Fonte corpo principal - NUNITO SANS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,149 +38,121 @@
 
     <main>
         <!-- FOTOS  -->
-        <h1 class="center">Fotos</h1>
+        <h1 class="first_h1 center">Fotos</h1>
         <div class="carousel">
-            <div class="carousel-inner">
-
-                <div class="fotos carousel-item">
-                    <img src="img/fotos_reviews/foto1.webp" alt="Imagem 1">
-                </div>
-                <div class="fotos carousel-item">
-                    <img src="img/fotos_reviews/foto2.webp" alt="Imagem 2">
-                </div>
-                <div class="fotos carousel-item">
-                    <img src="img/fotos_reviews/foto3.webp" alt="Imagem 3">
-                </div>
-                <div class="fotos carousel-item">
-                    <img src="img/fotos_reviews/foto4.webp" alt="Imagem 4">
-                </div>
-                <div class="fotos carousel-item">
-                    <img src="img/fotos_reviews/foto5.webp" alt="Imagem 5">
-                </div>
-                <div class="fotos carousel-item">
-                    <img src="img/fotos_reviews/foto6.webp" alt="Imagem 6">
-                </div>
-
-            </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
+            <img class="fotos" src="img/fotos_reviews/foto1.webp" alt="Imagem 1">
+            <img class="fotos" src="img/fotos_reviews/foto2.webp" alt="Imagem 2">
+            <img class="fotos" src="img/fotos_reviews/foto3.webp" alt="Imagem 3">
+            <img class="fotos" src="img/fotos_reviews/foto4.webp" alt="Imagem 4">
+            <img class="fotos" src="img/fotos_reviews/foto5.webp" alt="Imagem 5">
+            <img class="fotos" src="img/fotos_reviews/foto6.webp" alt="Imagem 6">
         </div>
 
         <!-- ANTES E DEPOIS  -->
-        <section>
-            <h1 class="center">Antes/ Depois</h1>
-            <div class="column">
-                <div class="row around">
-                    <img class="antes_depois" src="img/fotos_reviews/antesdepois.jpg" alt="">
-                    <img class="antes_depois" src="img/fotos_reviews/antesdepois2.jpg" alt="">
-                </div>
-
-                <div class="row around">
-                    <div class="center altura">
+        <h1 class="center">Antes & Depois</h1>
+        <table class="t100">
+            <tr>
+                <td class="t48"><img class="antes_depois" src="img/fotos_reviews/antesdepois.jpg" alt=""></td>
+                <td class="t4"></td>
+                <td class="t48"><img class="antes_depois" src="img/fotos_reviews/antesdepois2.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td class="t48 valign_middle">
+                    <div class="center saiba_mais">
                         <h2>Ficou interessado(a)?</h2>
-                        <a href="#">
-                            <p>Clique aqui para conhecer mais sobre os nossos serviços</p>
+                        <a href="servicos.html" class="link">
+                            <p>Saiba mais sobre os nossos serviços</p>
                         </a>
                     </div>
-                    <img class="antes_depois" src="img/fotos_reviews/antesdepois3.jpg" alt="">
-                </div>
-
-                <div class="row around">
-                    <img class="antes_depois" src="img/fotos_reviews/antesdepois4.jpg" alt="">
-                    <img class="antes_depois" src="img/fotos_reviews/antesdepois5.jpg" alt="">
-                </div>
-            </div>
-        </section>
+                </td>
+                <td class="t4"></td>
+                <td class="t48"><img class="antes_depois" src="img/fotos_reviews/antesdepois3.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td class="t48"><img class="antes_depois" src="img/fotos_reviews/antesdepois4.jpg" alt=""></td>
+                <td class="t4"></td>
+                <td class="t48"><img class="antes_depois" src="img/fotos_reviews/antesdepois5.jpg" alt=""></td>
+            </tr>
+        </table>
 
         <!-- AVALIACOES -->
         <section>
             <h1 class="center">Avaliações</h1>
 
-            <div class="carrossel">
-                <div class="carrossel-inner row">
+            <div class="carousel">
+                <!-- ITEM 1  -->
+                <div class="box bg_cinza">
+                    <img class="perfis" src="img/fotos_reviews/review1.jpg" alt="">
+                    <div class="nome">
+                        <h2>Marina<br>Gomes</h2>
+                        <p class="enfase">Botox</p>
+                    </div>
 
-                    <!-- ITEM 1  -->
-                    <div class="carrossel-item">
-                        <div class="box bg_verde_claro">
-                            <img class="perfis" src="img/fotos_reviews/review1.jpg" alt="">
-                            <div class="nome">
-                                <h2>Marina<br>Gomes</h2>
-                                <p class="enfase">Botox</p>
-                            </div>
-        
-                            <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia! Minha testa está mais suave e
-                                as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
-                        </div>
-                    </div>
-                    <!-- ITEM 2  -->
-                    <div class="carrossel-item">
-                        <div class="box bg_verde_claro">
-                            <img class="perfis" src="img/fotos_reviews/review2.jpg" alt="">
-                            <div class="nome">
-                                <h2>Carla<br>Silva</h2>
-                                <p class="enfase">Preenchimento</p>
-                            </div>
-        
-                            <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia! Minha testa está mais suave e
-                                as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
-                        </div>
-                    </div>
-                    <!-- ITEM 3 -->
-                    <div class="carrossel-item">
-                        <div class="box bg_verde_claro">
-                            <img class="perfis" src="img/fotos_reviews/review3.jpg" alt="">
-                            <div class="nome">
-                                <h2>Camila<br>Oliveira</h2>
-                                <p class="enfase">Depilação</p>
-                            </div>
-        
-                            <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia! Minha testa está mais suave e
-                                as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
-                        </div>
-                    </div>
-                    <!-- ITEM 4 -->
-                    <div class="carrossel-item">
-                        <div class="box bg_verde_claro">
-                            <img class="perfis" src="img/fotos_reviews/review4.jpg" alt="">
-                            <div class="nome">
-                                <h2>Lucas<br>Oliveira</h2>
-                                <p class="enfase">Acne</p>
-                            </div>
-        
-                            <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia! Minha testa está mais suave e
-                                as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
-                        </div>
-                    </div>
-                    <!-- ITEM 5  -->
-                    <div class="carrossel-item">
-                        <div class="box bg_verde_claro">
-                            <img class="perfis" src="img/fotos_reviews/review5.jpg" alt="">
-                            <div class="nome">
-                                <h2>Patrícia<br>Lima</h2>
-                                <p class="enfase">Botox</p>
-                            </div>
-        
-                            <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia! Minha testa está mais suave e
-                                as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
-                        </div>
-                    </div>
-                    <!-- ITEM 6  -->
-                    <div class="carrossel-item">
-                        <div class="box bg_verde_claro">
-                            <img class="perfis" src="img/fotos_reviews/review6.jpg" alt="">
-                            <div class="nome">
-                                <h2>Larissa<br>Costa</h2>
-                                <p class="enfase">Preenchimento</p>
-                            </div>
-        
-                            <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia! Minha testa está mais suave e
-                                as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
-                        </div>
-                    </div>
-    
+                    <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia!
+                        Minha testa está mais suave e
+                        as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
                 </div>
-                <button class="voltar">&#10094;</button>
-                <button class="avancar">&#10095;</button>
+                <!-- ITEM 2  -->
+                <div class="box bg_cinza">
+                    <img class="perfis" src="img/fotos_reviews/review2.jpg" alt="">
+                    <div class="nome">
+                        <h2>Carla<br>Silva</h2>
+                        <p class="enfase">Preenchimento</p>
+                    </div>
+
+                    <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia!
+                        Minha testa está mais suave e
+                        as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
+                </div>
+                <!-- ITEM 3 -->
+                <div class="box bg_cinza">
+                    <img class="perfis" src="img/fotos_reviews/review3.jpg" alt="">
+                    <div class="nome">
+                        <h2>Camila<br>Oliveira</h2>
+                        <p class="enfase">Depilação</p>
+                    </div>
+
+                    <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia!
+                        Minha testa está mais suave e
+                        as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
+                </div>
+                <!-- ITEM 4 -->
+                <div class="box bg_cinza">
+                    <img class="perfis" src="img/fotos_reviews/review4.jpg" alt="">
+                    <div class="nome">
+                        <h2>Lucas<br>Oliveira</h2>
+                        <p class="enfase">Acne</p>
+                    </div>
+
+                    <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia!
+                        Minha testa está mais suave e
+                        as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
+                </div>
+
+                <!-- ITEM 5  -->
+                <div class="box bg_cinza">
+                    <img class="perfis" src="img/fotos_reviews/review5.jpg" alt="">
+                    <div class="nome">
+                        <h2>Patrícia<br>Lima</h2>
+                        <p class="enfase">Botox</p>
+                    </div>
+
+                    <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia!
+                        Minha testa está mais suave e
+                        as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
+                </div>
+                <!-- ITEM 6  -->
+                <div class="box bg_cinza">
+                    <img class="perfis" src="img/fotos_reviews/review6.jpg" alt="">
+                    <div class="nome">
+                        <h2>Larissa<br>Costa</h2>
+                        <p class="enfase">Preenchimento</p>
+                    </div>
+
+                    <p class="center">Estou maravilhada com os resultados do botox realizado pela Dra. Tânia!
+                        Minha testa está mais suave e
+                        as linhas de expressão desapareceram. Excelente atendimento e resultados impecáveis!</p>
+                </div>
             </div>
 
         </section>
