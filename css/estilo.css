@@ -2,7 +2,7 @@
 h1 {
     font-size: xx-large;
     font-weight: bold;
-    margin: 5% 0 5% 0;
+    margin: 5% 0 2% 0;
     padding: 0 2% 0 2%;
 
     /* font-family: "Inter", sans-serif;
@@ -109,6 +109,12 @@ section {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+.mini_icone{
+    width: 10%;
+    height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
     /* footer e tabelas */
 .icone_P {
@@ -182,6 +188,21 @@ section {
 .valign_middle {
     vertical-align: middle;
 }
+.text_right {
+    text-align: right;
+    padding-right: 1%;
+}
+.text_left {
+    text-align: left;
+}
+
+.tabelas{
+
+    border-collapse: collapse;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
 
 .t100 {
     width: 100%;
@@ -193,6 +214,10 @@ section {
 
 .t10 {
     width: 10%;
+}
+
+.tagendar{
+    width: 40/3%;
 }
 .t20 {
     width: 20%;
@@ -210,6 +235,17 @@ section {
     width: 48%;
 }
 
+.t50 {
+    width: 50%;
+}
+
+.t60 {
+    width: 60%;
+}
+
+.th1{
+    height: 1rem;
+}
 
 
 /* INDEX.HTML  */
@@ -287,6 +323,37 @@ section {
     scroll-snap-type: x mandatory;
 }
 
+/* LOGIN.HTML */
+.box_login{
+    justify-content: center;
+    margin: 1% 0 1% 0;
+    background-color: #E5E8E3;
+    text-align: center;
+
+    border-radius: 15px;
+    padding: 1% 0 1% 0;
+}
+span{
+    font-size: medium;
+    padding: 0 1% 0 1%;
+
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+.login_mobile{
+    display: none;
+}
+
+
+/* AGENDAR.HTML */
+.servicos_select{
+    width: 25%;
+}
 
 /* LINK */
 .link {
@@ -442,6 +509,34 @@ body {
         border-radius: 15px;
     }
 
+    /* login */
+    span{
+        font-size: small;
+        padding: 0 1% 0 1%;
+    
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    }
+    
+    /* login  */
+    .login_mobile{
+        display: block;
+    }
+
+    .login_desktop{
+        display: none;
+    }
+
+    /* agendar */
+    .servicos_select{
+        width: 90%;
+    }
+
 }
 
 
@@ -469,7 +564,7 @@ body {
         position: relative;
     }
 
-    .navbar.responsive .icon {
+    .navbar.responsive .icon{
         display: show;
     }
 
@@ -515,4 +610,17 @@ body {
         padding-right: 1%;
     }
 
+    .mini_icone{
+        width: 35%;
+        height: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .recom{
+        width: 20%;
+        height: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

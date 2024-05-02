@@ -6,9 +6,6 @@
     <title>Login</title>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/header.js"></script>
 
@@ -50,18 +47,19 @@
     </header>
     
     <main>
-        <section>
-            <h1 class="center">Identifique-se</h1>
-            <table class="cem">
+        <section class="login_desktop">
+            <h1 class="first_h1 center">Identifique-se</h1>
+            
+            <table class="t100">
                 <tr>
                     <td class="t4"></td>
 
-                    <td class="box t30">
+                    <td class="box_login t30">
                         <h2>Login do Cliente</h2>
                         <form action="agendar.html" method="get">
-                            <span halign="right">
-                                CPF: <input type="text" id="cpf" placeholder="Digite seu CPF" required>
-                                <p></p>                
+                            <span>CPF:
+                                <input type="text" id="cpf" placeholder="Digite seu CPF" required>
+                                <p class="uma_linha"></p>                
                                 Senha: <input type="password" id="senha" placeholder="Digite sua senha" required>
                             </span>
                             <br><br>
@@ -71,12 +69,12 @@
 
                     <td class="t4"></td>
 
-                    <td class="box t30">
+                    <td class="box_login t30">
                         <h2>Login do Médico</h2>
                         <form action="medico.html" method="get">
-                            <span halign="right">
+                            <span>
                                 CPF: <input type="text" id="cpf" placeholder="Digite seu CPF" required>
-                                <br>             
+                                <p class="uma_linha"></p>            
                                 Senha: <input type="password" id="senha" placeholder="Digite sua senha" required>
                             </span>
                             <br><br>
@@ -89,20 +87,63 @@
                 <tr><td colspan="5"><br></td></tr>
                 <tr>
                     <td class="t4"></td>
-                    <td class="box t30">
-                        <a href="registro.html"><p class="obs">Não tem login? Registre-se aqui.</p></a>
-                        <a href="#"><p class="obs">Esqueceu o seu login? Clique aqui.</p></a>
+                    <td class="box_login t30">
+                        <a class="link" href="registro.html"><p class="obs uma_linha">Não tem login? Registre-se aqui.</p></a>
+                        <a class="link" href="#"><p class="obs">Esqueceu o seu login? Clique aqui.</p></a>
                     </td>
                     <td class="t4"></td>
-                    <td></td>
+                    <td class="t30"></td>
                     <td class="t4"></td>
                 </tr>
                 
             </table>
         </section>
 
+        <section class="login_mobile">
+            <h1 class="first_h1 center">Identifique-se</h1>
+            
+            <table class="t100">
+                <tr>
+                    <td class="box_login t100">
+                        <h2>Login do Cliente</h2>
+                        <form action="agendar.html" method="get">
+                            <span>CPF:
+                                <input type="text" id="cpf" placeholder="Digite seu CPF" required>
+                                <p class="uma_linha"></p>                
+                                Senha: <input type="password" id="senha" placeholder="Digite sua senha" required>
+                            </span>
+                            <br><br>
+                            <button type="sumbit" id="cliente">Entrar</button>
+                        </form>
+                    </td>
+                </tr>
+                <tr><td class="th1"></td></tr>
+                <tr>
+                    <td class="box_login t100">
+                        <a class="link" href="registro.html"><p class="obs uma_linha">Não tem login? Registre-se aqui.</p></a>
+                        <a class="link" href="#"><p class="obs">Esqueceu o seu login? Clique aqui.</p></a>
+                    </td>
+                </tr>
+                <tr><td class="th1"></td></tr>
+                <tr>
+                    <td class="box_login t100">
+                        <h2>Login do Médico</h2>
+                        <form action="medico.html" method="get">
+                            <span>
+                                CPF: <input type="text" id="cpf" placeholder="Digite seu CPF" required>
+                                <p class="uma_linha"></p>            
+                                Senha: <input type="password" id="senha" placeholder="Digite sua senha" required>
+                            </span>
+                            <br><br>
+                            <button type="sumbit" id="medico">Entrar</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
     </main>
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
 
      <!-- Incluir o footer -->
      <div class="footer-wrapper" id="footer"></div>
