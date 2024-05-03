@@ -182,11 +182,26 @@ section {
     right: 5%;
 }
 
-
+    /* agendar */
+.icone_agendar{
+    width: 70%;
+    height: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.icone_agendar_receita{
+    width: 60%;
+    height: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+}
 
 /* TABELA*/
 .valign_middle {
     vertical-align: middle;
+}
+.text_center {
+    text-align: center;
 }
 .text_right {
     text-align: right;
@@ -349,11 +364,49 @@ span{
     display: none;
 }
 
+/* REGISTRAR.HTML  */
+.cpf-section {
+    margin-bottom: 5%;
+}
+.error-message {
+    color: red;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+.padding_registro{
+    padding: 0.5% 0 0.5% 0;
+}
+.input_text{
+    width: 50%;
+}
 
 /* AGENDAR.HTML */
 .servicos_select{
     width: 25%;
 }
+.contorno{
+    border: solid #B9D2BC 0.1rem;
+    padding: 1%;
+}
+
+/* AVALIAR.HTML  */
+.rating {
+    display: inline-block;
+  }
+  
+.rating img {
+    width: 10%;
+    height: auto;
+}
+.agradecimento_mobile{
+    display: none;
+}
+  
 
 /* LINK */
 .link {
@@ -379,6 +432,11 @@ footer {
 
 
 /* HEADER */
+.img_header{
+    height: 50%;
+    width: auto;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -388,7 +446,7 @@ body {
     background-color: #B9D2BC;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100%;    
 }
 
 .navbar a {
@@ -398,6 +456,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    height: fit-content;
 }
 
 .navbar a:hover {
@@ -536,7 +595,18 @@ body {
     .servicos_select{
         width: 90%;
     }
-
+    .icone_agendar{
+        width: 100%;
+        height: auto;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .icone_agendar_receita{
+        width: 90%;
+        height: auto;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
 }
 
 
@@ -622,5 +692,13 @@ body {
         height: auto;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    /* avaliar.html */
+    .agradecimento_desktop{
+        display: none;
+    }
+    .agradecimento_mobile{
+        display: block;
     }
 }

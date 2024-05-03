@@ -7,8 +7,8 @@
     <title>Registre-se</title>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <!-- <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css"> -->
 
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/header.js"></script>
@@ -42,60 +42,51 @@
             <a href="fotos-reviews.html">Fotos & Reviews</a>
             <a href="agendar.html">Área do Cliente</a>
             <a href="medico.html">Área do Médico</a>
-
-            <a class="login_header" href="login.html">
-                <div class="row">
-                    Login
-                    <img src="img/perfil.png" alt="">
-                </div>
-            </a>
-            
+            <a class="login_header" href="login.html">Login</a>
         </div>
     </header>
 
     <main>
-        <section>
-            <h1 class="center">Área de Cadastro</h1>
+        <h1 class="first_h1 center">Área de Cadastro</h1>
 
-            <div class="container">
-                <div class="cpf-section box t30">
-                    <h2>Validação de CPF</h2>
+                <div class="padding_registro cpf-section center bg_verde_claro">
+                    <h2 class="">Validação de CPF</h2>
                     <label for="cpf">CPF: </label>
                     <input type="text" id="cpf" placeholder="Digite seu CPF">
                     <br><br>
                     <p class="obs">*Somente números</p>
                     <br>
                     <button id="btn-exibir-dados" onclick="exibirDadosCadastro()">Validar CPF</button>
-                    <p id="cpf-error" class="error-message"></p>
+                    <br><p id="cpf-error" class="error-message"></p>
                 </div>
-                <div class="cadastro-section box t50" id="cadastro-section" style="display: none;">
+                <div class="padding_registro cadastro-section bg_cinza" id="cadastro-section" style="display: none;">
                     <!-- Formulário de Cadastro -->
-                    <h2>Formulário de Cadastro</h2>
+                    <h2 class="center">Formulário de Cadastro</h2>
                     <form type="get" action="agendar.html">
-                        <table class="cem">
+                        <table class="t100">
                             <tr>
-                                <td align="right" width="40%"><label for="nome">Nome: </label></td>
-                                <td align="left" width="60%"><input type="text" id="nome" placeholder="Digite seu nome" required></td>
+                                <td class="text_right" width="50%"><label for="nome">Nome: </label></td>
+                                <td class="input_text text_left" width="50%"><input type="text" id="nome" placeholder="Digite seu nome" required></td>
                             </tr>
                             <tr>
-                                <td align="right"><label for="telefone">Telefone: </label></td>
-                                <td align="left"><input type="text" id="telefone" placeholder="Digite seu telefone" required></td>
+                                <td class="text_right"><label for="telefone">Telefone: </label></td>
+                                <td class="text_left"><input type="text" id="telefone" placeholder="Digite seu telefone" required></td>
                             </tr>
                             <tr>
-                                <td align="right"><label for="data-nascimento">Data de Nascimento: </label></td>
-                                <td align="left"><input type="date" id="data-nascimento" required></td>
+                                <td class="text_right"><label for="data-nascimento">Data de Nascimento: </label></td>
+                                <td class="text_left"><input type="date" id="data-nascimento" required></td>
                             </tr>
                             <tr>
-                                <td align="right"><label for="email">Email: </label></td>
-                                <td align="left"><input type="email" id="email" placeholder="Digite seu email" required></td>
+                                <td class="text_right"><label for="email">Email: </label></td>
+                                <td class="text_left"><input type="email" id="email" placeholder="Digite seu email" required></td>
                             </tr>
                             <tr>
-                                <td align="right"><label for="instagram">Instagram: </label></td>
-                                <td align="left"><input type="text" id="instagram" placeholder="Digite seu Instagram"></td>
+                                <td class="text_right"><label for="instagram">Instagram: </label></td>
+                                <td class="text_left"><input type="text" id="instagram" placeholder="Digite seu Instagram"></td>
                             </tr>
                             <tr>
-                                <td align="right"><label for="sexo">Sexo:</label></td>
-                                <td align="left">
+                                <td class="text_right"><label for="sexo">Sexo:</label></td>
+                                <td class="text_left">
                                     <select id="sexo">
                                         <option value="nulo">Informe o sexo</option>
                                         <option value="masculino">Masculino</option>
@@ -105,21 +96,20 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td align="right"><label for="senha">Senha: </label></td>
-                                <td align="left"><input type="password" id="senha" placeholder="Digite sua senha" required></td>
+                                <td class="text_right"><label for="senha">Senha: </label></td>
+                                <td class="text_left"><input type="password" id="senha" placeholder="Digite sua senha" required></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td align="left"><br><button type="sumbit" id="cadastro">Cadastrar</button></td>
+                                <td class="text_left"><br><button type="sumbit" id="cadastro">Cadastrar</button></td>
                             </tr>
                         </table>
                     </form>
 
                 </div>
             </div>
-        </section>
-
     </main>
+    <br><br><br>
 
     <!-- Incluir o footer -->
     <div class="footer-wrapper" id="footer"></div>

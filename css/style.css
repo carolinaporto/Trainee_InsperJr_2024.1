@@ -12,8 +12,6 @@
     padding-right: 1rem;
 }
 
-
-
 .border{
     margin-bottom: 1rem;
 }
@@ -22,21 +20,3 @@
 .all_padding{
     padding: 1rem;
 }
-
-td{
-    height: 2rem;
-    vertical-align: middle;
-}
-
-
-
-/* AVALIAR  */
-.rating {
-    display: inline-block;
-  }
-  
-  .rating img {
-    width: 40px;
-    height: 40px;
-  }
-  

@@ -7,12 +7,8 @@
     <title>Avaliar</title>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/header.js"></script>
-
     <script src="js/avaliar.js"></script>
 
     <!-- Fonte corpo principal - NUNITO SANS -->
@@ -39,30 +35,22 @@
             <a href="nossa-equipe.html">Nossa equipe</a>
             <a href="servicos.html">Serviços</a>
             <a href="fotos-reviews.html">Fotos & Reviews</a>
-            <a href="agendar.html">Área do Cliente</a>
-            <a href="medico.html">Área do Médico</a>
-
-            <a class="login_header" href="login.html">
-                <div class="row">
-                    Login
-                    <img src="img/perfil.png" alt="">
-                </div>
-            </a>
-            
+            <a href="agendar.html">Agendar</a>
+            <a href="avaliar.html">Avaliar</a>
+            <a class="login_header" href="login.html">Login</a>
         </div>
     </header>
 
     <main>
+        <h1 class="first_h1 center">Avaliar</h1>
         <section>
-            <h1 class="center">Avaliar</h1>
-
             <div>
                 <form action="agendar.html" type="get">
 
-                    <table class="cem">
+                    <table class="t100">
                         <tr>
-                            <td rowspan="8" class="box t30">
-                                <div class="center">
+                            <td class="agradecimento_desktop" rowspan="8" class="t30 contorno">
+                                <div class="center contorno">
                                     <h2>Agradecimento</h2>
                                     <p>A clínica agradece a sua avaliação! Ela é de extrema importância para a manutenção dos nossos serviços.</p><br>
                                     <p>Abaixo você encontrará alguns tópicos relevantes e alinhados à visão da clínica.
@@ -72,16 +60,14 @@
                                     <p>A clínica agradece novamente!</p><br>
                                 </div>
                             </td>
-                            <td class="t10"></td>
-                            <td colspan="3" class="center bg_cinza">
+                            <td class="t10 agradecimento_desktop" rowspan="8"></td>
+                            <td colspan="2" class="center bg_cinza">
                                 <h2>Realize a sua avaliação</h2>
                             </td>
                         </tr>
 
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td class="center bg_cinza">
+                            <td class="center valign_middle     bg_cinza t30">
                                 <p>Atendimento</p>
                             </td>
                             <td class="center bg_cinza">
@@ -95,9 +81,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td class="center bg_cinza">
+                            <td class="valign_middle center bg_cinza">
                                 <p>Profissional</p>
                             </td>
                             <td class="center bg_cinza">
@@ -112,9 +96,7 @@
                         </tr>
 
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td class="center bg_cinza">
+                            <td class="center valign_middle bg_cinza">
                                 <p>Serviço</p>
                             </td>
                             <td class="center bg_cinza">
@@ -129,9 +111,7 @@
                         </tr>
 
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td class="center bg_cinza">
+                            <td class="center valign_middle bg_cinza">
                                 <p>Agendamento</p>
                             </td>
                             <td class="center bg_cinza">
@@ -146,9 +126,7 @@
                         </tr>
 
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td class="center bg_cinza">
+                            <td class="center valign_middle bg_cinza">
                                 <p>Ambiente</p>
                             </td>
                             <td class="center bg_cinza">
@@ -163,23 +141,33 @@
                         </tr>
 
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td class="center bg_cinza">
+                            <td class="center valign_middle bg_cinza">
                                 <p>Demais detalhes</p>
                             </td>
-                            <td class="center bg_cinza"><textarea rows="4" cols="50" alt="Comentários"
+                            <td class="center bg_cinza"><textarea rows="4" cols="20" alt="Comentários"
                                     id="comentarios"></textarea></td>
                         </tr>
 
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td class="center bg_cinza"></td>
-                            <td class="center bg_cinza" align="left"><br><button type="sumbit"
-                                    id="avaliar">Avaliar</button></td>
+                            <td colspan="2" class="center valign_middle bg_cinza"><br><button type="sumbit" id="avaliar">Avaliar</button></td>
                         </tr>
 
+                    </table>
+                    <br>
+                    <table>
+                        <tr class="agradecimento_mobile">
+                            <td rowspan="8" class="t30 contorno">
+                                <div class="center">
+                                    <h2>Agradecimento</h2>
+                                    <p>A clínica agradece a sua avaliação! Ela é de extrema importância para a manutenção dos nossos serviços.</p><br>
+                                    <p>Abaixo você encontrará alguns tópicos relevantes e alinhados à visão da clínica.
+                                    </p><br>
+                                    <p>Encorajamos que você deixe comentários sobre a sua experiência para que possamos melhorar a cada dia.</p><br>
+                                    <p>Considere 0 estrelas como muito ruim e 5 estrelas como muito bom.</p><br>
+                                    <p>A clínica agradece novamente!</p><br>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </form>
 
@@ -190,7 +178,7 @@
     </main>
 
 
-
+    <br><br><br><br>
     <!-- Incluir o footer -->
     <div class="footer-wrapper" id="footer"></div>
     <script>
