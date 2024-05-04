@@ -7,9 +7,6 @@
     <title>Tania Derm</title>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/header.js"></script>
 
@@ -38,80 +35,133 @@
             <a href="documentos.html">Documentos</a>
             <a href="estatisticas.html">Estatísticas</a>
             <a href="avaliacoes.html">Avaliações</a>
-            <a class="login_header" href="login.html">Login</a>
+            <div class="row">
+                <a class="login_header" href="login.html">Login</a>
+                <a><img src="img/perfil.png" alt=""></a>
+            </div>
         </div>
     </header>
 
     <main>
         <section>
-            <h1 class="center">Documentos</h1>
+            <h1 class="first_h1 center">Documentos</h1>
 
-            <div class="box bg_cinza">
-                <h2 class="center">Upload de Documentos</h2>
-                <form action="documentos.html" method="get" enctype="multipart/form-data">
-                    <label for="fileUpload">Selecione um arquivo:</label>
-                    <input type="file" id="fileUpload" name="fileUpload">
-                    <button type="submit">Upload</button>
+            <!-- Updload de documentos estilo desktop  -->
+            <div class="upload_desktop">
+                <form class="center" action="documentos.html" method="get" enctype="multipart/form-data">
+                    <table class="bg_cinza center t100">
+                        <tr>
+                            <td colspan="3">
+                                <h2 class="center">Upload de Documentos</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t40 text_right">
+                                <label for="fileUpload">Selecione um arquivo:</label>
+                            </td>
+                            <td class="t40 text_left">
+                                <input type="file" id="fileUpload" name="fileUpload">
+                            </td>
+                            <td class="t20 text_left"><button type="submit">Upload</button></td>
+                        </tr>
+                        <tr><td colspan="3"><p class=uma_linha></p></td></tr>
+                    </table>
                 </form>
             </div>
+
+             <!-- Updload de documentos estilo mobile  -->
+            <div class="upload_mobile">
+                <form class="center" action="documentos.html" method="get" enctype="multipart/form-data">
+                    <table class="bg_cinza center t100">
+                        <tr>
+                            <td colspan="2">
+                                <h2 class="center">Upload de Documentos</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t4"></td>
+                            <td class="text_left">
+                                <label for="fileUpload"><p class="uma_linha enfase">Selecione um arquivo:</p></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t4"></td>
+                            <td class="text_left">
+                                <input type="file" id="fileUpload" name="fileUpload">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t4"></td>
+                            <td><p class="uma_linha"></p</td></tr>
+                        <tr>
+                            <td class="t4"></td>
+                            <td class="text_left"><button type="submit">Upload</button></td>
+                        </tr>
+                        <tr><td colspan="3"><p class=uma_linha></p></td></tr>
+                    </table>
+                </form>
+            </div>
+
+
+            <!-- Lista de documentos -->
             <div>
                 <h2 class="center">Lista de Documentos</h2>
-                <table class="cem">
+                <table class="t100">
                     <tr class="bg_verde_claro">
-                        <td align="left">
-                            <p class="enfase">Nome do Documento</p>
+                        <td class="t75 text_left valign_middle">
+                            <p class="enfase ">Nome do Documento</p>
                         </td>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <p class="enfase">Download</p>
                         </td>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <p class="enfase">Excluir</p>
                         </td>
                     </tr>
                     <tr>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <p>Termo de Conscentimento da LGPD</p>
                         </td>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <a href="#"><img class="mini_icone" src="img/download.png" alt=""></a>
                         </td>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <a href="#"><img class="mini_icone" src="img/lixeira.png" alt=""></a>
                         </td>
                     </tr>
 
                     <tr class="bg_cinza">
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <p>Termo de Responsabilidade</p>
                         </td>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <a href="#"><img class="mini_icone" src="img/download.png" alt=""></a>
                         </td>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <a href="#"><img class="mini_icone" src="img/lixeira.png" alt=""></a>
                         </td>
                     </tr>
 
                     <tr>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <p>Ficha de Anamnese Dermatológica</p>
                         </td>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <a href="#"><img class="mini_icone" src="img/download.png" alt=""></a>
                         </td>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <a href="#"><img class="mini_icone" src="img/lixeira.png" alt=""></a>
                         </td>
                     </tr>
 
                     <tr class="bg_cinza">
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <p>Autorização para Tratamento Menores de Idade</p>
                         </td>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <a href="#"><img class="mini_icone" src="img/download.png" alt=""></a>
                         </td>
-                        <td align="left">
+                        <td class="text_left valign_middle">
                             <a href="#"><img class="mini_icone" src="img/lixeira.png" alt=""></a>
                         </td>
                     </tr>
@@ -119,9 +169,33 @@
                     
                 </table>
             </div>
+            <br>
+            <!-- Observações sobre a agenda do dia: -->
+            <table class="contorno">
+                <tr>
+                    <td colspan="2">
+                        <p class="enfase uma_linha">Observações:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="t4 valign_middle text_center"><img class="icone_agendar_receita" src="img/download.png"
+                            alt=""></td>
+                    <td class="valign_middle">
+                        <p class="obs">Para fazer download do documento, clique no icone ao lado na tabela.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="t4 valign_middle text_center"><img class="icone_agendar" src="img/lixeira.png"
+                            alt=""></td>
+                    <td class="valign_middle">
+                        <p class="obs">Para excluir um documento, clique no icone ao lado na tabela.</p>
+                    </td>
+                </tr>
+            </table>
 
         </section>
     </main>
+    <br><br><br>
 
     <!-- Incluir o footer -->
     <div class="footer-wrapper" id="footer"></div>

@@ -7,9 +7,6 @@
     <title>Tania Derm</title>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/header.js"></script>
 
@@ -38,22 +35,29 @@
             <a href="documentos.html">Documentos</a>
             <a href="estatisticas.html">Estatísticas</a>
             <a href="avaliacoes.html">Avaliações</a>
-            <a class="login_header" href="login.html">Login</a>
+            <div class="row">
+                <a class="login_header" href="login.html">Login</a>
+                <a><img src="img/perfil.png" alt=""></a>
+            </div>
         </div>
     </header>
 
     <main>
         <section>
-            <h1 class="center">Estatísticas</h1>
+            <h1 class="first_h1 center">Estatísticas</h1>
 
-            <div class="box t50">
-                <!-- Formulário de Cadastro -->
-                <h2>Filtrar</h2>
+            <!-- form filtrar -> estatisticas_desktop  -->
+            <div class="estatisticas_desktop">
+                
                 <form action="estatisticas.html" type="get">
 
-                    <table class="cem">
+                    <table class="t100 bg_cinza">
                         <tr>
-                            <td align="right">
+                            <td colspan="4"><h2 class="center">Filtrar</h2></td>
+                        </tr>
+                        <tr>
+                            <td class="t4"></td>
+                            <td class="t46">
                                 <label for="profissional">Profissional:</label>
                                 <select id="profissional">
                                     <option value="">Selecione o profissional</option>
@@ -65,8 +69,75 @@
                                 </select>
                             </td>
 
-                            <td align="right">
+                            <td class="t46">
                                 <label for="servicos">Serviço:</label>
+                                <select id="servicos">
+                                    <option value="">Selecione o serviço</option>
+                                    <option value="consulta">Consulta</option>
+                                    <option value="mancha">Tratamento de Manchas</option>
+                                    <option value="cicatriz">Tratamento de Cicatrizes</option>
+                                    <option value="preenchimentos">Preenchimentos</option>
+                                    <option value="limpeza_pele">Limpeza de Pele</option>
+                                    <option value="depilacao">Depilação a Laser</option>
+                                </select>
+                            </td>
+                            <td class="t4"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="t4"></td>
+                            <td>
+                                <label for="data-inicial">Data Inicial:</label>
+                                <input type="date" id="data-inicial">
+                            </td>
+                            <td>
+                                <label for="data-final">Data Final:</label>
+                                <input type="date" id="data-final">
+                            </td>
+                            <td class="t4"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><p class=uma_linha></p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="center">
+                                <button type="sumbit" id="agendamento">Filtrar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><p class=uma_linha></p></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <!-- form filtrar -> estatisticas_mobile  -->
+            <div class="estatisticas_mobile">
+                <form action="estatisticas.html" type="get">
+                    <table class="t100 bg_cinza">
+                        <tr>
+                            <td colspan="2"><h2 class="center">Filtrar</h2></td>
+                        </tr>
+                        <tr>
+                            <td class="t40 text_right">
+                                <label for="profissional"><p class="uma_linha">Profissional:</p></label>
+                            </td>
+                            <td class="t60">
+                                <select id="profissional">
+                                    <option value="">Selecione o profissional</option>
+                                    <option value="Tania">Dra. Tania</option>
+                                    <option value="Sofia">Dra. Sofia</option>
+                                    <option value="Marcos">Dr. Marcos</option>
+                                    <option value="Isabela">Dra. Isabela</option>
+                                    <option value="Carolina">Dra. Carolina</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t40 text_right">
+                                <label for="servicos"><p class="uma_linha">Serviço:</p></label>
+                            </td>
+                            <td class="t60">
                                 <select id="servicos">
                                     <option value="">Selecione o serviço</option>
                                     <option value="consulta">Consulta</option>
@@ -80,48 +151,68 @@
                         </tr>
 
                         <tr>
-                            <td align="right">
-                                <label for="data-inicial">Data Inicial:</label>
+                            <td class="t40 text_right">
+                                <label for="data-inicial"><p class="uma_linha">Data Inicial:</p></label>
+                            </td>
+                            <td class="t60">
                                 <input type="date" id="data-inicial">
                             </td>
-                            <td align="right">
-                                <label for="data-final">Data Final:</label>
+                        </tr>
+                        <tr>
+                            <td class="t40 text_right">
+                                <label for="data-final"><p class="uma_linha">Data Final:</p></label>
+                            </td>
+                            <td class="t60">
                                 <input type="date" id="data-final">
                             </td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td align="left"><br><button type="sumbit" id="agendamento">Filtrar</button></td>
+                            <td colspan="2"><p class=uma_linha></p></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="center">
+                                <button type="sumbit" id="agendamento">Filtrar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><p class=uma_linha></p></td>
                         </tr>
                     </table>
                 </form>
 
             </div>
 
-            <div class="box cem">
+            <!-- Gráficos -->
+            <div >
                 <h2 class="center">Gráficos</h2>
-                <table>
+                <table class="t100 contorno">
                     <tr>
-                        <td class="t50">
-                            <p>Serviços</p>
-                            <img src="img/grafico-avaliacao.png" alt="" width="100%" height="auto">
+                        <td colspan="2"><p class="uma_linha"></p></td>
+                    </tr>
+                    <tr>
+                        <td class="t50 center">
+                            <p class="uma_linha">Serviços</p>
+                            <img src="img/grafico-avaliacao.png" alt="" width="90%" height="auto">
                         </td>
 
-                        <td class="t50">
-                            <p>Avaliações</p>
-                            <img src="img/grafico-avaliacao.png" alt=""  width="100%" height="auto">
+                        <td class="t50 center">
+                            <p class="uma_linha">Avaliações</p>
+                            <img src="img/grafico-avaliacao.png" alt=""  width="90%" height="auto">
                         </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><p class="uma_linha"></p></td>
                     </tr>
 
                     <tr>
-                        <td class="t50">
-                            <p>Ambiente</p>
-                            <img src="img/grafico-avaliacao.png" alt="" width="100%" height="auto">
+                        <td class="t50 center">
+                            <p class="uma_linha">Ambiente</p>
+                            <img src="img/grafico-avaliacao.png" alt="" width="90%" height="auto">
                         </td>
 
-                        <td class="t50">
-                            <p>Agendamento</p>
-                            <img src="img/grafico-avaliacao.png" alt=""  width="100%" height="auto">
+                        <td class="t50 center">
+                            <p class="uma_linha">Agendamento</p>
+                            <img src="img/grafico-avaliacao.png" alt=""  width="90%" height="auto">
                         </td>
                     </tr>
 

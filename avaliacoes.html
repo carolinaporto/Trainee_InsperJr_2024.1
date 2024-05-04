@@ -7,9 +7,6 @@
     <title>Tania Derm</title>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/header.js"></script>
 
@@ -38,23 +35,29 @@
             <a href="documentos.html">Documentos</a>
             <a href="estatisticas.html">Estatísticas</a>
             <a href="avaliacoes.html">Avaliações</a>
-            <a class="login_header" href="login.html">Login</a>
+            <div class="row">
+                <a class="login_header" href="login.html">Login</a>
+                <a><img src="img/perfil.png" alt=""></a>
+            </div>
         </div>
     </header>
 
     <main>
         <section>
-            <h1 class="center">Avaliação</h1>
+            <h1 class="first_h1 center">Avaliações</h1>
 
-            <div class="box t50">
-                <!-- Formulário de Cadastro -->
-                <h2>Filtrar</h2>
-                <form action="estatisticas.html" type="get">
+            <div>
+                <form action="avaliacoes.html" type="get">
 
-                    <table class="cem">
+                    <table class="t100 bg_cinza">
                         <tr>
-                            <td align="right">
-                                <label for="profissional">Profissional:</label>
+                            <td colspan="2"><h2 class="center">Filtrar</h2></td>
+                        </tr>
+                        <tr>
+                            <td class="t40 text_right">
+                                <label for="profissional"><p class="uma_linha">Profissional:</p></label>
+                            </td>
+                            <td class="t60">
                                 <select id="profissional">
                                     <option value="">Selecione o profissional</option>
                                     <option value="Tania">Dra. Tania</option>
@@ -64,9 +67,12 @@
                                     <option value="Carolina">Dra. Carolina</option>
                                 </select>
                             </td>
-
-                            <td align="right">
-                                <label for="servicos">Serviço:</label>
+                        </tr>
+                        <tr>
+                            <td class="t40 text_right">
+                                <label for="servicos"><p class="uma_linha">Serviço:</p></label>
+                            </td>
+                            <td>
                                 <select id="servicos">
                                     <option value="">Selecione o serviço</option>
                                     <option value="consulta">Consulta</option>
@@ -79,8 +85,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td align="left"><br><button type="sumbit" id="agendamento">Filtrar</button></td>
+                            <td colspan="2" class="center"><br><button type="sumbit" id="agendamento">Filtrar</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><p class="uma_linha"></p></td>
                         </tr>
                     </table>
                 </form>
@@ -91,26 +99,33 @@
             <!-- HISTORICO -->
             <div>
                 <h2 class="center">Lista de Avaliações</h2>
-                <table class="cem">
+                <table class="t100">
                     <tr class="bg_verde_claro">
-                        <td><p class="enfase">Data/Hora</p></td>
-                        <td><p class="enfase">Profissional</p></td>
-                        <td><p class="enfase">Paciente</p></td>
-                        <td><p class="enfase">Status</p></td>
+                        <td><p class="enfase uma_linha">Data/Hora</p></td>
+                        <td><p class="enfase uma_linha">Profissional</p></td>
+                        <td><p class="enfase uma_linha">Paciente</p></td>
+                        <td><p class="enfase uma_linha">Status</p></td>
                     </tr>
 
+                    <!-- Avaliação 1 -->
+                    <tr class="bg_cinza"><td colspan="4"><p class="uma_linha"></p></td></tr>
                     <tr class="bg_cinza">
                         <td><p>09/05/24 12:10</p></td>
                         <td><p>Dra. Tania</p></td>
                         <td><p>Antonio Riscala</p></td>
-                        <td><p class="obs">Agendado</p></td>
+                        <td><p class="obs">Realizado</p></td>
+                    </tr>
+                    <tr class="bg_cinza">
+                        <td colspan="4"><p class="uma_linha"></p></td>
                     </tr>
                     <tr class="bg_cinza">
                         <td colspan="4">
-                            <p>Escrever escrever escrever</p>
+                            <p class="uma_linha">"Minha experiência na clínica dermatológica foi excepcional. A Dra. Tania não apenas demonstrou profundo conhecimento em dermatologia, mas também foi incrivelmente atenciosa e empática. Ela ouviu minhas preocupações com cuidado e me guiou através de um plano de tratamento personalizado, que superou todas as minhas expectativas. Estou extremamente grato pela sua expertise e pelo excelente atendimento que recebi. Recomendo totalmente!"</p>
                         </td>
                     </tr>
 
+                    <!-- Avaliação 2 -->
+                    <tr><td colspan="4"><p class="uma_linha"></p></td></tr>
                     <tr>
                         <td><p>19/03/24 15:00</p></td>
                         <td><p>Dra. Carolina</p></td>
@@ -118,11 +133,16 @@
                         <td><p class="obs">Realizado</p></td>
                     </tr>
                     <tr>
+                        <td colspan="4"><p class="uma_linha"></p></td>
+                    </tr>
+                    <tr>
                         <td colspan="4">
-                            <p>Escrever escrever escrever</p>
+                            <p class="uma_linha">"A Dra. Carolina é extremamente competente e seu tratamento foi incrível para a minha pele. As consultas foram claras e confortáveis, embora a pontualidade pudesse ser melhorada."</p>
                         </td>
                     </tr>
 
+                    <!-- Avaliação 3 -->
+                    <tr class="bg_cinza"><td colspan="4"><p class="uma_linha"></p></td></tr>
                     <tr class="bg_cinza">
                         <td><p>06/01/24 08:00</p></td>
                         <td><p>Dr. Marcos</p></td>
@@ -130,11 +150,16 @@
                         <td><p class="obs">Cancelado</p></td>
                     </tr>
                     <tr class="bg_cinza">
+                        <td colspan="4"><p class="uma_linha"></p></td>
+                    </tr>
+                    <tr class="bg_cinza">
                         <td colspan="4">
-                            <p>Escrever escrever escrever</p>
+                            <p class="uma_linha">"Infelizmente, minha consulta com o Dr. Marcos foi cancelada devido a um imprevisto. Embora tenha sido decepcionante ter que reagendar, entendo que imprevistos acontecem e aprecio a comunicação rápida e transparente da clínica sobre a situação. Estou ansiosa para minha próxima consulta e confiante de que receberei o mesmo nível de cuidado e atenção que esperava inicialmente."</p>
                         </td>
                     </tr>
 
+                    <!-- Avaliação 4 -->
+                    <tr><td colspan="4"><p class="uma_linha"></p></td></tr>
                     <tr>
                         <td><p>12/11/23 11:00</p></td>
                         <td><p>Dra. Tania</p></td>
@@ -142,8 +167,11 @@
                         <td><p class="obs">Realizado</p></td>
                     </tr>
                     <tr>
+                        <td colspan="4"><p class="uma_linha"></p></td>
+                    </tr>
+                    <tr>
                         <td colspan="4">
-                            <p>Escrever escrever escrever</p>
+                            <p class="uma_linha">"Embora tenha ficado muito satisfeito com os resultados do tratamento com a Dra. Carolina, gostaria de salientar que a comunicação entre as consultas poderia ser mais eficiente. Às vezes, senti falta de informações atualizadas sobre o progresso do meu tratamento entre as visitas ao consultório. No entanto, sua competência e dedicação são inquestionáveis, e isso não diminui minha recomendação para outros pacientes."</p>
                         </td>
                     </tr>
 

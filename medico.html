@@ -7,9 +7,6 @@
     <title>Tania Derm</title>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
-
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/header.js"></script>
 
@@ -39,25 +36,32 @@
             <a href="documentos.html">Documentos</a>
             <a href="estatisticas.html">Estatísticas</a>
             <a href="avaliacoes.html">Avaliações</a>
-            <a class="login_header" href="login.html">Login</a>
+            <div class="row">
+                <a class="login_header" href="login.html">Login</a>
+                <a><img src="img/perfil.png" alt=""></a>
+            </div>
         </div>
     </header>
 
     <main>
         <section>
-            <h1 class="center">Agendar</h1>
+            <h1 class="first_h1 center">Agendar</h1>
 
-            <div class="box t50">
+            <div>
                 <!-- Formulário de Cadastro -->
-                <h2>Agendar Atendimento</h2>
                 <form action="agendar.html" type="get">
 
-                    <table class="cem">
+                    <table class="t100 bg_cinza">
                         <tr>
-                            <td align="right">
-                                <label for="paciente">Paciente:</label>
+                            <td colspan="2">
+                                <h2 class="center">Agendar Atendimento</h2>
                             </td>
-                            <td align="left">
+                        </tr>
+                        <tr>
+                            <td class="t40 text_right">
+                                <label for="paciente"><p class="uma_linha">Paciente:</p></label>
+                            </td>
+                            <td class="t60 text_left">
                                 <select id="paciente">
                                     <option value="">Selecione o paciente</option>
                                     <option value="1">Antonio Riscala</option>
@@ -70,10 +74,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
-                                <label for="servicos">Serviço:</label>
+                            <td class="text_right">
+                                <label for="servicos"><p class="uma_linha">Serviço:</p></label>
                             </td>
-                            <td align="left">
+                            <td class="text_left">
                                 <select id="servicos">
                                     <option value="">Selecione o serviço</option>
                                     <option value="consulta">Consulta</option>
@@ -86,10 +90,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
-                                <label for="profissional">Profissional:</label>
+                            <td class="text_right">
+                                <label for="profissional"><p class="uma_linha">Profissional:</p></label>
                             </td>
-                            <td align="left">
+                            <td class="text_left">
                                 <select id="profissional">
                                     <option value="">Selecione o profissional</option>
                                     <option value="Tania">Dra. Tania</option>
@@ -101,19 +105,19 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
-                                <label for="data-atendimento">Data do Atendimento:</label>
+                            <td class="text_right">
+                                <label for="data-atendimento"><p class="uma_linha">Data do Atendimento:</p></label>
                             </td>
-                            <td align="left">
+                            <td class="text_left">
                                 <input type="date" id="data-atendimento" required>
                             </td>
                         </tr>
                         <tr>
 
-                            <td align="right">
-                                <label for="horario">Horário:</label>
+                            <td class="text_right">
+                                <label for="horario"><p class="uma_linha">Horário:</p></label>
                             </td>
-                            <td align="left">
+                            <td class="text_left">
                                 <select id="horario">
                                     <option value="0800">8:00</option>
                                     <option value="0900">9:00</option>
@@ -130,28 +134,29 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right"><input type="checkbox" id="contato"></td>
-                            <td align="left"><p class="obs">Eu aceito receber contato de avaliação do meu atendimento por email</p></td>
+                            <td class="text_right"><input type="checkbox" id="contato"></td>
+                            <td class="text_left"><p class="obs">Eu aceito receber contato de avaliação do meu atendimento por email</p></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td align="left"><br><button type="sumbit" id="agendamento">Confirmar</button></td>
+                            <td class="text_left"><br><button type="sumbit" id="agendamento">Confirmar</button></td>
                         </tr>
+                        <tr><td colspan="2"><p class=uma_linha></p></td></tr>
                     </table>
                 </form>
 
             </div>
 
             <!-- HISTORICO -->
-            <div>
+            <div class="tabelas">
                 <h2 class="center">Histórico de atendimentos</h2>
-                <table class="cem">
+                <table class="t100">
                     <tr class="bg_verde_claro">
-                        <td><p class="enfase">Data/Hora</p></td>
-                        <td><p class="enfase">Procedimento</p></td>
-                        <td><p class="enfase">Profissional</p></td>
-                        <td><p class="enfase">Receita</p></td>
-                        <td><p class="enfase">Pagamento</p></td>
+                        <td class="t20"><p class="enfase">Data/Hora</p></td>
+                        <td class="t30"><p class="enfase">Procedimento</p></td>
+                        <td class="t20"><p class="enfase">Profissional</p></td>
+                        <td class="t10"><p class="enfase">Receita</p></td>
+                        <td class="t20"><p class="enfase">Pagamento</p></td>
                     </tr>
 
                     <tr>
@@ -191,6 +196,8 @@
         </section>
 
     </main>
+
+    <br><br><br>
 
     <!-- Incluir o footer -->
     <div class="footer-wrapper" id="footer"></div>

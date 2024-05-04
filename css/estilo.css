@@ -212,12 +212,14 @@ section {
 }
 
 .tabelas{
-
     border-collapse: collapse;
     overflow-x: auto;
     overflow-y: hidden;
 }
 
+.theight {
+    height: 110%;
+}
 
 .t100 {
     width: 100%;
@@ -231,7 +233,7 @@ section {
     width: 10%;
 }
 
-.tagendar{
+.t40_3{
     width: 40/3%;
 }
 .t20 {
@@ -246,6 +248,10 @@ section {
     width: 40%;
 }
 
+.t46{
+    width: 46%;
+}
+
 .t48{
     width: 48%;
 }
@@ -256,6 +262,10 @@ section {
 
 .t60 {
     width: 60%;
+}
+
+.t75 {
+    width: 75%;
 }
 
 .th1{
@@ -406,7 +416,19 @@ span{
 .agradecimento_mobile{
     display: none;
 }
-  
+.textarea{
+    width: 80%;
+}
+
+/* DOCUMENTOS.HTML */
+.upload_mobile {
+  display: none;
+}
+
+/* ESTATISTICAS.HTML  */
+.estatisticas_mobile{
+    display: none;
+}
 
 /* LINK */
 .link {
@@ -444,9 +466,15 @@ body {
 
 .navbar {
     background-color: #B9D2BC;
+    border-bottom: gray solid 0.1rem    ;
     position: fixed;
     top: 0;
-    width: 100%;    
+    width: 100%;   
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .navbar a {
@@ -516,7 +544,7 @@ body {
 
     h2 {
         font-size: medium;
-        margin: 5% 0 5% 0;
+        margin: 3% 0 3% 0;
         padding: 1%;
     }
 
@@ -582,12 +610,12 @@ body {
         "YTLC" 500;
     }
     
-    /* login  */
-    .login_mobile{
+    /* login, documentos e estatisticas*/
+    .login_mobile, .upload_mobile, .estatisticas_mobile{
         display: block;
     }
 
-    .login_desktop{
+    .login_desktop, .upload_desktop, .estatisticas_desktop{
         display: none;
     }
 
@@ -613,6 +641,10 @@ body {
 /* Configuração de Responsividade Header */
 /* MAX-WIDTH --> 890 PX  */
 @media screen and (max-width: 890px) {
+    .navbar{
+        display: block;
+    }
+
     .navbar a:not(.icon, .login_header) {
         display: none;
     }
@@ -631,7 +663,7 @@ body {
     }
 
     .navbar.responsive {
-        position: relative;
+        position: absolute;
     }
 
     .navbar.responsive .icon{
@@ -642,6 +674,7 @@ body {
         float: none;
         display: block;
         text-align: left;
+       
     }
 
     /* nossa equipe */
