@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/header.js"></script>
-    <script src="js/login.js"></script>
+    <script src="js/login_cliente.js"></script>
 
     <!-- Fonte corpo principal - NUNITO SANS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap"
+        rel="stylesheet">
 
     <!-- FONTE TÍTULO E SUBTÍTULO - INTER -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,102 +40,144 @@
             <a href="medico.html">Área do Médico</a>
             <div class="row">
                 <a class="login_header" href="login.html">Login</a>
-                <a><img src="img/perfil.png" alt=""></a>
+                <a href="login.html"><img src="img/perfil.png" alt=""></a>
             </div>
-            
+
         </div>
     </header>
-    
+
     <main>
+        <!-- Login Desktop -->
         <section class="login_desktop">
             <h1 class="first_h1 center">Identifique-se</h1>
-            
+
             <table class="t100">
                 <tr>
                     <td class="t4"></td>
-
+                    <!-- Login do cliente -->
                     <td class="box_login t30">
                         <h2>Login do Cliente</h2>
-                        <form action="agendar.html" method="get">
-                            <span>CPF:
-                                <input type="text" id="cpf" placeholder="Digite seu CPF" required>
-                                <p class="uma_linha"></p>                
-                                Senha: <input type="password" id="senha" placeholder="Digite sua senha" required>
-                            </span>
+                        <form id="login-cliente-form">
+                            <label for="cpf_cliente">CPF: </label>
+                            <input type="text" id="cpf_cliente" placeholder="Digite seu CPF" required>
+
+                            <p class="uma_linha"></p>
+
+                            <label for="senha_cliente">Senha: </label>
+                            <input type="password" id="senha_cliente" placeholder="Digite sua senha" required>
+
                             <br><br>
-                            <button type="sumbit" id="cliente">Entrar</button>
+                            <button  type="submit" id="btn_entrar_cliente" onclick="cliente_logar()">Entrar</button>
+                            <br>
+                            <p id="cpf-error-cliente" class="error-message"></p>
+                            <p id="senha-error-cliente" class="error-message"></p>
                         </form>
                     </td>
 
                     <td class="t4"></td>
 
+                    <!-- Login do médico -->
                     <td class="box_login t30">
                         <h2>Login do Médico</h2>
-                        <form action="medico.html" method="get">
-                            <span>
-                                CPF: <input type="text" id="cpf" placeholder="Digite seu CPF" required>
-                                <p class="uma_linha"></p>            
-                                Senha: <input type="password" id="senha" placeholder="Digite sua senha" required>
-                            </span>
+                        <form id="login-medico-form">
+                            <label for="cpf_medico">CPF: </label>
+                            <input type="text" id="cpf_medico" placeholder="Digite seu CPF" required>
+
+                            <p class="uma_linha"></p>
+
+                            <label for="senha_medico">Senha: </label>
+                            <input type="password" id="senha_medico" placeholder="Digite sua senha" required>
+
                             <br><br>
-                            <button type="sumbit" id="medico">Entrar</button>
+                            <button  type="submit" id="btn_entrar_medico" onclick="medico_logar()">Entrar</button>
+                            <br>
+                            <p id="cpf-error-medico" class="error-message"></p>
+                            <p id="senha-error-medico" class="error-message"></p>
                         </form>
                     </td>
 
                     <td class="t4"></td>
                 </tr>
-                <tr><td colspan="5"><br></td></tr>
+                <tr>
+                    <td colspan="5"><br></td>
+                </tr>
                 <tr>
                     <td class="t4"></td>
                     <td class="box_login t30">
-                        <a class="link" href="registro.html"><p class="obs uma_linha">Não tem login? Registre-se aqui.</p></a>
-                        <a class="link" href="#"><p class="obs">Esqueceu o seu login? Clique aqui.</p></a>
+                        <a class="link" href="registro.html">
+                            <p class="obs uma_linha">Não tem login? Registre-se aqui.</p>
+                        </a>
+                        <a class="link" href="#">
+                            <p class="obs">Esqueceu o seu login? Clique aqui.</p>
+                        </a>
                     </td>
                     <td class="t4"></td>
                     <td class="t30"></td>
                     <td class="t4"></td>
                 </tr>
-                
+
             </table>
         </section>
 
+        <!-- Login Mobile -->
         <section class="login_mobile">
             <h1 class="first_h1 center">Identifique-se</h1>
-            
+           
             <table class="t100">
                 <tr>
                     <td class="box_login t100">
                         <h2>Login do Cliente</h2>
-                        <form action="agendar.html" method="get">
-                            <span>CPF:
-                                <input type="text" id="cpf" placeholder="Digite seu CPF" required>
-                                <p class="uma_linha"></p>                
-                                Senha: <input type="password" id="senha" placeholder="Digite sua senha" required>
-                            </span>
+                         <!-- Login Cliente Mobile -->
+                         <form id="login-cliente-responsivo-form">
+                            <label for="cpf_cliente_responsivo">CPF: </label>
+                            <input type="text" id="cpf_cliente_responsivo" placeholder="Digite seu CPF" required>
+
+                            <p class="uma_linha"></p>
+
+                            <label for="senha_cliente_responsivo">Senha: </label>
+                            <input type="password" id="senha_cliente_responsivo" placeholder="Digite sua senha" required>
+
                             <br><br>
-                            <button type="sumbit" id="cliente">Entrar</button>
+                            <button  type="submit" id="btn_entrar_cliente_responsivo" onclick="cliente_responsivo_logar()">Entrar</button>
+                            <br>
+                            <p id="cpf-error-cliente-responsivo" class="error-message"></p>
+                            <p id="senha-error-cliente-responsivo" class="error-message"></p>
                         </form>
                     </td>
                 </tr>
-                <tr><td class="th1"></td></tr>
+                <tr>
+                    <td class="th1"></td>
+                </tr>
                 <tr>
                     <td class="box_login t100">
-                        <a class="link" href="registro.html"><p class="obs uma_linha">Não tem login? Registre-se aqui.</p></a>
-                        <a class="link" href="#"><p class="obs">Esqueceu o seu login? Clique aqui.</p></a>
+                        <a class="link" href="registro.html">
+                            <p class="obs uma_linha">Não tem login? Registre-se aqui.</p>
+                        </a>
+                        <a class="link" href="#">
+                            <p class="obs">Esqueceu o seu login? Clique aqui.</p>
+                        </a>
                     </td>
                 </tr>
-                <tr><td class="th1"></td></tr>
+                <tr>
+                    <td class="th1"></td>
+                </tr>
                 <tr>
                     <td class="box_login t100">
                         <h2>Login do Médico</h2>
-                        <form action="medico.html" method="get">
-                            <span>
-                                CPF: <input type="text" id="cpf" placeholder="Digite seu CPF" required>
-                                <p class="uma_linha"></p>            
-                                Senha: <input type="password" id="senha" placeholder="Digite sua senha" required>
-                            </span>
+                        <form id="login-medico-responsivo-form">
+                            <label for="cpf_medico_responsivo">CPF: </label>
+                            <input type="text" id="cpf_medico_responsivo" placeholder="Digite seu CPF" required>
+
+                            <p class="uma_linha"></p>
+
+                            <label for="senha_medico_responsivo">Senha: </label>
+                            <input type="password" id="senha_medico_responsivo" placeholder="Digite sua senha" required>
+
                             <br><br>
-                            <button type="sumbit" id="medico">Entrar</button>
+                            <button  type="submit" id="btn_entrar_medico_responsivo" onclick="medico_responsivo_logar()">Entrar</button>
+                            <br>
+                            <p id="cpf-error-medico-responsivo" class="error-message"></p>
+                            <p id="senha-error-medico-responsivo" class="error-message"></p>
                         </form>
                     </td>
                 </tr>
@@ -143,15 +187,16 @@
     </main>
     <br><br><br><br><br><br>
 
-     <!-- Incluir o footer -->
-     <div class="footer-wrapper" id="footer"></div>
-     <script>
-         fetch('footer.html')
-             .then(response => response.text())
-             .then(html => {
-                 document.getElementById('footer').innerHTML = html;
-             });
-     </script>
+    <!-- Incluir o footer -->
+    <div class="footer-wrapper" id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
 
 </body>
+
 </html>
