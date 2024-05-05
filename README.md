@@ -7,7 +7,7 @@ O site possui abas para os usuários conhecerem mais sobre a clínica e os servi
 
     Abas dos clientes: login.html, agendar.html, avaliar.html
 
-    Abas dos médicos: login.html, medico.html, agenda-do-dia.hmtl, documentos.html, estatisticas.html, avaliacoes.html
+    Abas dos médicos: login.html, medico.html, agenda-do-dia.hmtl, atendimento.html, documentos.html, estatisticas.html, avaliacoes.html
 
 <br>
 Para abrir a página principal, rode o arquivo **index.html**
