@@ -49,6 +49,13 @@ p {
     font-weight: bold;
 }
 
+.verm{
+    color: red;
+}
+.green{
+    color: rgb(22, 146, 22);
+}
+
 
 /* COONFIGURACOES PRINCIPAIS DA PAGINA WEB */
 main {
@@ -77,6 +84,12 @@ section {
     text-align: center;
 }
 
+
+.around{
+    justify-content: space-around;
+    align-items: center;
+}
+
 .uma_linha {
     margin-bottom: 2%;
 }
@@ -99,6 +112,9 @@ section {
 }
 
 /* IMAGENS */
+.redondo{
+    border-radius: 50%;
+}
 .logo_index {
     width: 25%;
     height: auto;
@@ -196,6 +212,21 @@ section {
     padding-right: 1%;
 }
 
+    /* banners */
+.img_banner {
+    width: fit-content;
+    height: auto;
+    position: relative;
+}
+.img_banner1{
+    position: absolute;
+    height: 90%;
+    width: auto;
+    top: 5%;
+    left: 5%;   
+}
+
+
 /* TABELA*/
 .valign_middle {
     vertical-align: middle;
@@ -287,6 +318,19 @@ section {
 }
 .linhas_esquerda {
     border-left: #B9D2BC solid 0.1rem;
+}
+.relative{
+    position: relative;
+}
+.banner_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* SOBRE-NOS.HTML  */
@@ -470,7 +514,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;   
-    
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -532,6 +576,95 @@ body {
     transform: rotate(180deg);
 }
 
+/* POPUP  */
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+    color: #000;
+    text-align: center;
+    background: linear-gradient(to bottom, #B9D2BC, #ACCB96);
+}
+
+.popup-header {
+    position: relative;
+}
+
+.close-icon {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
+}
+
+.register-button {
+    padding: 1% 2%;
+    background-color: #79926E;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border: solid #677A5A 0.1rem;
+}
+
+.register-button:hover {
+    background-color: #677A5A;
+}
+
+
+/* BANNERS CARROSSEL */
+.carousel-container-banner {
+    margin-top: 4.7%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_banner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.banner {
+    flex: 0 0 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -100;
+}
+
+.prev-arrow,
+.next-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.prev-arrow {
+    left: 0;
+}
+
+.next-arrow {
+    right: 0;
+}
 
 
 /* Configuração Geral de Responsividade Celular */

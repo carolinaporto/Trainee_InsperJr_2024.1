@@ -8,7 +8,10 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="js/header.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/banner.js"></script>
 
     <!-- Fonte corpo principal - NUNITO SANS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,24 +31,59 @@
     <header>
         <div class="navbar" id="myNavbar">
             <a href="javascript:void(0);" id="menu" class="icon">
-                <img src="img/menu.png" class="icone" alt="">
+                <img src="img/menu.png" class="icone" alt="Ícone menu hambuerguer">
             </a>
             <a class="tania_derm" href="index.html">Tania Derm</a>
             <a href="sobre-nos.html">Sobre nós</a>
             <a href="nossa-equipe.html">Nossa equipe</a>
             <a href="servicos.html">Serviços</a>
             <a href="fotos-reviews.html">Fotos & Reviews</a>
-            <a href="agendar.html">Área do Cliente</a>
-            <a href="medico.html">Área do Médico</a>
+            <a href="login.html">Área do Cliente</a>
+            <a href="login.html">Área do Médico</a>
             <div class="row">
-                <a class="login_header" href="login.html">Login</a>
-                <a><img src="img/perfil.png" alt=""></a>
+                <a href="login.html">Login</a>
+                <a class="login_header" href="login.html">
+                    <img class="redondo" src="img/perfil.png" alt="Imagem de perfil">
+                </a>
             </div>
         </div>
     </header>
 
     <main class="column">
-        <!-- Página principal -->
+        <!-- BANNER  -->
+        <div class="carousel-container-banner">
+            <div class="carousel_banner">
+                <!-- banner 1 -->
+                <div class="banner" style="background-color: #DBE8DD;">
+                    <table class="t100">
+                        <tr>
+                            <td class="t4 valign_middle text_left">
+                                <img class="t100" src="img/img2_banner1.png" alt="">
+                            </td>
+                            <td class="t46 valign_middle">
+                                <h1 class="titulo_banner">Bem-vindo à Tania Derm</h1>
+                                <p class="subtitulo_banner">Excelência em cuidados de pele</p>
+                                <a href="sobre-nos.html" class="link">
+                                    <p class="obs">Saiba mais</p>
+                                </a>
+                            </td>
+                            <td class="t50 valign_middle text_right">
+                                <img class=" t75" src="img/img_banner1.png" alt="">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+
+                <div class="banner" style="background-color: aquamarine;">Banner 2</div>
+                <div class="banner">Banner 3</div>
+            </div>
+            <div class="prev-arrow">&lt;</div>
+            <div class="next-arrow">&gt;</div>
+        </div>
+
 
         <!-- SOBRE NÓS -->
         <h1 class="center first_h1">Sobre nós</h1>
@@ -53,15 +91,21 @@
         <section class="row t100">
             <img class="logo_index" src="img/logo_verde.png" alt="" srcset="">
             <div class="column">
-                <p class="uma_linha">Bem-vindo à Tania Derm, onde a excelência em cuidados de pele se une ao calor humano.</p>
-                <p class="uma_linha">Fundada pela Dra. Tania, nossa clínica é o resultado de uma visão apaixonada por proporcionar um
+                <p class="uma_linha">Bem-vindo à Tania Derm, onde a excelência em cuidados de pele se une ao calor
+                    humano.</p>
+                <p class="uma_linha">Fundada pela Dra. Tania, nossa clínica é o resultado de uma visão apaixonada
+                    por proporcionar um
                     atendimento personalizado e um ambiente acolhedor.</p>
-                <p class="uma_linha">Com uma abordagem centrada no paciente, nossa equipe dedicada está empenhada em oferecer soluções
-                    dermatológicas de qualidade, guiadas pela expertise e pela compaixão, para que cada cliente se sinta
+                <p class="uma_linha">Com uma abordagem centrada no paciente, nossa equipe dedicada está empenhada em
+                    oferecer soluções
+                    dermatológicas de qualidade, guiadas pela expertise e pela compaixão, para que cada cliente se
+                    sinta
                     em
                     casa em nossa clínica.</p>
                 <p class="duas_linhas">Descubra nossa história e compromisso com sua beleza.</p>
-                <a href="sobre-nos.html" class="link M"><p>Clique aqui para conhecer mais sobre nós</p></a>
+                <a href="sobre-nos.html" class="link M">
+                    <p>Clique aqui para conhecer mais sobre nós</p>
+                </a>
             </div>
         </section>
 
@@ -72,9 +116,12 @@
             <img class="icone_index" src="img/servicos/calendario.png" alt="">
             <div class="column t100 linhas_esquerda">
                 <h2 class="bg_verde_claro">Consultas</h2>
-                <p class="uma_linha">Avaliações profissionais com o auxílio de tecnologia de ponta, permitindo um atendimento
+                <p class="uma_linha">Avaliações profissionais com o auxílio de tecnologia de ponta, permitindo um
+                    atendimento
                     personalizado e eficaz.</p>
-                <a class="link"><p class="obs">Saiba mais</p></a>
+                <a class="link">
+                    <p class="obs">Saiba mais</p>
+                </a>
             </div>
         </div>
 
@@ -82,10 +129,13 @@
             <img class="icone_index" src="img/servicos/tratamentos.png" alt="">
             <div class="column t100 linhas_esquerda">
                 <h2 class="bg_verde_claro">Tratamentos</h2>
-                <p class="uma_linha">Alta tecnologia utilizando lasers, elevando o prestígio e a competitividade da clínica.</p>
+                <p class="uma_linha">Alta tecnologia utilizando lasers, elevando o prestígio e a competitividade da
+                    clínica.</p>
                 <a class="enfase servicos_index">De manchas</a>
                 <a class="enfase servicos_index">De cicatrizes</a>
-                <a class="link"><p class="obs">Saiba mais</p></a>
+                <a class="link">
+                    <p class="obs">Saiba mais</p>
+                </a>
             </div>
         </div>
 
@@ -93,12 +143,15 @@
             <img class="icone_index" src="img/servicos/labios.png" alt="">
             <div class="column t100 linhas_esquerda">
                 <h2 class="bg_verde_claro">Preenchimentos</h2>
-                <p class="uma_linha">Reduzir sinais de envelhecimento e preservar a aparência, além de servir para tratamentos
+                <p class="uma_linha">Reduzir sinais de envelhecimento e preservar a aparência, além de servir para
+                    tratamentos
                     terapêuticos e possuir baixo risco.</p>
                 <a class="enfase servicos_index">Ácido Hialurônico</a>
                 <a class="enfase servicos_index">Ácido Poliláctico</a>
                 <a class="enfase servicos_index">Toxina Botulínica</a>
-                <a class="link"><p class="obs">Saiba mais</p></a>
+                <a class="link">
+                    <p class="obs">Saiba mais</p>
+                </a>
             </div>
         </div>
 
@@ -106,14 +159,33 @@
             <img class="icone_index" src="img/servicos/estetica.png" alt="">
             <div class="column t100 linhas_esquerda">
                 <h2 class="bg_verde_claro">Estética</h2>
-                <p class="uma_linha">Um portfólio abrangente de tratamentos estéticos de ponta, cuidadosamente personalizados.</p>
+                <p class="uma_linha">Um portfólio abrangente de tratamentos estéticos de ponta, cuidadosamente
+                    personalizados.</p>
                 <a class="enfase servicos_index">Depilação a Laser</a>
                 <a class="enfase servicos_index">Limpeza de pele</a>
-                <a class="link"><p class="obs">Saiba mais</p></a>
+                <a class="link">
+                    <p class="obs">Saiba mais</p>
+                </a>
             </div>
         </div>
 
     </main>
+
+    <!-- PopUp -->
+    <div id="overlay" class="overlay">
+        <div class="popup-container">
+            <div class="popup-header">
+                <span class="close-icon" onclick="closePopup()"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="popup-content">
+                <h2>Obrigado por visitar o nosso site!</h2>
+                <p class="uma_linha">Cadastre-se agora e receba 10% de desconto na primeira consulta!</p>
+                <button class="register-button" onclick="redirectToRegister()">
+                    <p class="uma_linha">Cadastrar</p>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- Incluir o footer -->
     <div class="footer-wrapper" id="footer"></div>
