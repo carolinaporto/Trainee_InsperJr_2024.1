@@ -10,7 +10,8 @@ O site possui abas para os usuários conhecerem mais sobre a clínica e os servi
     Abas dos médicos: login.html, medico.html, agenda-do-dia.hmtl, atendimento.html, documentos.html, estatisticas.html, avaliacoes.html
 
 <br>
-Para abrir a página principal, rode o arquivo **index.html**
+Para abrir a página principal, rode o arquivo index.html
+
 
 <br> 
 *Site desenvolvido durante o Trainee da Empresa Junior do Insper, em 2024.1
