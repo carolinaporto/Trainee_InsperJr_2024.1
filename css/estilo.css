@@ -55,6 +55,10 @@ p {
 .green{
     color: rgb(22, 146, 22);
 }
+.laranja{
+    color: #D6603A;
+    font-weight: bold;
+}
 
 
 /* COONFIGURACOES PRINCIPAIS DA PAGINA WEB */
@@ -109,6 +113,14 @@ section {
 
 .bg_cinza {
     background-color: #E5E8E3;
+}
+
+.bg_verdinho{
+    background-color: #DBE8DD;
+}
+
+.opacity {
+    opacity: 0.8;
 }
 
 /* IMAGENS */
@@ -231,6 +243,11 @@ section {
 .valign_middle {
     vertical-align: middle;
 }
+
+.align_bottom{
+    vertical-align: bottom;
+}
+
 .text_center {
     text-align: center;
 }
@@ -249,7 +266,7 @@ section {
 }
 
 .theight {
-    height: 110%;
+    height: 100%;
 }
 
 .t100 {
@@ -279,6 +296,10 @@ section {
     width: 40%;
 }
 
+.t42{
+    width: 42%;
+}
+
 .t46{
     width: 46%;
 }
@@ -295,8 +316,12 @@ section {
     width: 60%;
 }
 
-.t75 {
-    width: 75%;
+.t70 {
+    width: 70%;
+}   
+
+.t80 {
+    width: 80%;
 }
 
 .th1{
@@ -474,6 +499,19 @@ span{
     display: none;
 }
 
+/* BANNER  */
+.bg_image{
+    background-image: url("../img/fundo_clinica.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: -100;
+}
+
+
 /* LINK */
 .link {
     text-decoration: none;
@@ -553,7 +591,7 @@ body {
 .question {
     font-weight: bold;
     cursor: pointer;
-    background-color: #B9D2BC;
+    background-color: #DBE8DD;
     padding: 1%;
 }
 
@@ -562,6 +600,7 @@ body {
     background-color: #E5E8E3;
     padding: 1%;
     margin: 0 5% 0 5%;
+    border-top: solid gray 0.1rem;
     border-bottom: solid gray 0.1rem;
 }
 
@@ -768,6 +807,23 @@ body {
         padding-left: 1%;
         padding-right: 1%;
     }
+    /* banners index.html  */
+    .banner {
+        flex: 0 0 100%;
+        height: 35vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -100;
+    }
+    .carousel-container-banner {
+        margin-top: 15%;
+        position: relative;
+        overflow: hidden;
+    }
+    .subtitulo_banner{
+        display: none;
+    }
 }
 
 
@@ -867,4 +923,5 @@ body {
     .agradecimento_mobile{
         display: block;
     }
+
 }
