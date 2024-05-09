@@ -14,4 +14,4 @@ Para abrir a página principal, rode o arquivo index.html
 
 
 <br> 
-*Site desenvolvido durante o Trainee da Empresa Junior do Insper, em 2024.1
+*Site desenvolvido durante o Trainee da Empresa Junior do Insper, em 2024.1, pela Maria Carolina Porto

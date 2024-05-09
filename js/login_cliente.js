@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     
         // CPF válido, exibe a segunda div
-        window.location.href = 'medico.html';
+        window.location.href = 'agenda-do-dia.html';
     }
     
 
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     
         // CPF válido, exibe a segunda div
-        window.location.href = 'medico.html';
+        window.location.href = 'agenda-do-dia.html';
     }
 
     function cliente_responsivo_logar() {
